@@ -1,0 +1,25 @@
+<aside>
+    <nav [ngClass]="{'sidebar': true, 'collapsed': isCollapsed}">
+      <button class="toggle-btn" (click)="toggleSidebar()">
+        <i class="fa fa-bars"></i>
+      </button>
+      <ul class="nav flex-column topic">
+        <li *ngFor="let topic of topics" class="topic nav-item">
+          <span class="topic" (click)="toggleSubtopics(topic)">
+            <i class="fas fa-caret-right" *ngIf="!topic.showSubtopics"></i>
+            <i class="fas fa-caret-down" *ngIf="topic.showSubtopics"></i>
+              {{ topic.topic }}
+            </span>
+         <!-- <ul class="subtopics" *ngIf="topic.showSubtopics">-->
+            <ul class="subtopics">
+
+            <li *ngFor="let subitem of topic.subtopics" class="subtopic nav-item">
+                <a class="nav-link" href="#">{{subitem}}</a>
+            </li>
+        </ul>
+        </li>
+        
+      </ul>
+    </nav>
+  </aside>
+  

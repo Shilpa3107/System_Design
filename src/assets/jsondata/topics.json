@@ -1,0 +1,37 @@
+{"topics": [
+    {
+      "topic": "Introduction to System Design",
+      "subtopics": [
+        "Importance of system design",
+        "Principles of good system design",
+        "System design process overview"
+      ]
+    },
+    {
+      "topic": "System Design Fundamentals",
+      "subtopics": [
+        "Scalability",
+        "Availability",
+        "Reliability",
+        "Performance",
+        "Security",
+        "Maintainability",
+        "Extensibility",
+        "Modularity"
+      ]
+    },
+    {
+      "topic": "Architectural Patterns",
+      "subtopics": [
+        "Monolithic Architecture",
+        "Client-Server Architecture",
+        "Microservices Architecture",
+        "Event-Driven Architecture",
+        "Service-Oriented Architecture",
+        "Layered Architecture",
+        "Event Sourcing and CQRS",
+        "Peer-to-Peer Architecture",
+        "Serverless Architecture"
+      ]
+    }
+  ]}
