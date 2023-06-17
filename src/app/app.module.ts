@@ -8,6 +8,9 @@ import { FooterComponent } from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { UmldiagramComponent } from './umldiagram/umldiagram.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { HttpClientModule } from '@angular/common/http';
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
-    HomeComponent
+    HomeComponent,
+    AboutComponent,
+    ContactComponent,
+    UmldiagramComponent
   ],
   imports: [
     BrowserModule,
