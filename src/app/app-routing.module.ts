@@ -8,9 +8,9 @@ import { MethodologyComponent } from './methodology/methodology.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent} ,
+  {path: 'methodology', component: MethodologyComponent}, 
   {path: 'about', component: AboutComponent},
   {path: 'contact', component: ContactComponent}, 
-  {path: 'methodology', component: MethodologyComponent}, 
   {path: 'umldiagram', component: UmldiagramComponent}
 
 ];
