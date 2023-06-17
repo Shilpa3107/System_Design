@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MethodologyComponent } from './methodology/methodology.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { UmldiagramComponent } from './umldiagram/umldiagram.component';
@@ -19,6 +20,7 @@ import { UmldiagramComponent } from './umldiagram/umldiagram.component';
     FooterComponent,
     SidebarComponent,
     HomeComponent,
+    MethodologyComponent,
     AboutComponent,
     ContactComponent,
     UmldiagramComponent
