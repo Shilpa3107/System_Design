@@ -14,6 +14,7 @@ import { ContactComponent } from './contact/contact.component';
 import { UmldiagramComponent } from './umldiagram/umldiagram.component';
 import { CasestudiesComponent } from './casestudies/casestudies.component';
 import { PracticesComponent } from './practices/practices.component';
+import { ToolComponent } from './tool/tool.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { PracticesComponent } from './practices/practices.component';
     MethodologyComponent,
     CasestudiesComponent,
     PracticesComponent,
+    ToolComponent,
     AboutComponent,
     ContactComponent,
     UmldiagramComponent
