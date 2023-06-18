@@ -12,6 +12,8 @@ import { MethodologyComponent } from './methodology/methodology.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { UmldiagramComponent } from './umldiagram/umldiagram.component';
+import { CasestudiesComponent } from './casestudies/casestudies.component';
+import { PracticesComponent } from './practices/practices.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { UmldiagramComponent } from './umldiagram/umldiagram.component';
     SidebarComponent,
     HomeComponent,
     MethodologyComponent,
+    CasestudiesComponent,
+    PracticesComponent,
     AboutComponent,
     ContactComponent,
     UmldiagramComponent

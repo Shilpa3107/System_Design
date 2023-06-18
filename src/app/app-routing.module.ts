@@ -6,6 +6,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { UmldiagramComponent } from './umldiagram/umldiagram.component';
+import { PracticesComponent } from './practices/practices.component';
 
 
 
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path: '', component: HomeComponent} ,
   {path: 'methodology', component: MethodologyComponent}, 
   {path: 'casestudies', component: CasestudiesComponent}, 
+  {path: 'practices', component: PracticesComponent},
   {path: 'about', component: AboutComponent},
   {path: 'contact', component: ContactComponent}, 
   {path: 'umldiagram', component: UmldiagramComponent}
