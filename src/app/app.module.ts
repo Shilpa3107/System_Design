@@ -17,6 +17,7 @@ import { PracticesComponent } from './practices/practices.component';
 import { ToolComponent } from './tool/tool.component';
 import { BlogComponent } from './blog/blog.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,8 +36,10 @@ import { BlogComponent } from './blog/blog.component';
   ],
   imports: [
     BrowserModule,
+    
     AppRoutingModule,
     HttpClientModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
