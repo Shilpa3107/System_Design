@@ -1,7 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
-
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
@@ -30,7 +29,5 @@ export class SidebarComponent implements OnInit {
   toggleSubtopics(topic: any) {
     topic.showSubtopics = !topic.showSubtopics;
   }
- 
-  
 
 }

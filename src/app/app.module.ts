@@ -36,7 +36,6 @@ import { BlogComponent } from './blog/blog.component';
   ],
   imports: [
     BrowserModule,
-    
     AppRoutingModule,
     HttpClientModule
     
