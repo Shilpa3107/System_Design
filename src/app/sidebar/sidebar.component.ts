@@ -29,7 +29,5 @@ export class SidebarComponent implements OnInit {
   toggleSubtopics(topic: any) {
     topic.showSubtopics = !topic.showSubtopics;
   }
-  
-  
 
 }
