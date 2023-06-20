@@ -12,15 +12,19 @@
             </span>
          <!-- <ul class="subtopics" *ngIf="topic.showSubtopics">-->
             <ul class="subtopics">
-
-            <li *ngFor="let subitem of topic.subtopics" class="subtopic nav-item">
-                <a class="nav-link" href="#">{{subitem}}</a>
+                <li *ngFor="let topic of topics">
+                {{topic.subtopics}}
+                <ul>
+            <li *ngFor="let subtopic of topic.subtopics" class="subtopic nav-item">
+              {{subtopic.name}}  
+              <a class="nav-link" href="#">{subtopics.name}</a>
             </li>
         </ul>
+      </li>
+        </ul>
         </li>
-        
-      </ul>
+        </ul>
+        </ul>
     </nav>
-  </aside>
-
-  
+    </aside>
+    
