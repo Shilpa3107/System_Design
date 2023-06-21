@@ -18,6 +18,7 @@ import { ToolComponent } from './tool/tool.component';
 import { BlogComponent } from './blog/blog.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,12 +34,12 @@ import { BlogComponent } from './blog/blog.component';
     AboutComponent,
     ContactComponent,
     UmldiagramComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
-    
   ],
   providers: [],
   bootstrap: [AppComponent]
