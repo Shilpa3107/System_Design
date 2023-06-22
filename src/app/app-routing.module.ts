@@ -9,7 +9,8 @@ import { UmldiagramComponent } from './umldiagram/umldiagram.component';
 import { PracticesComponent } from './practices/practices.component';
 import { ToolComponent } from './tool/tool.component';
 import { BlogComponent } from './blog/blog.component';
-
+import { TopicComponent } from './topic/topic.component';
+import { NotPageFoundComponent } from './not-page-found/not-page-found.component';
 
 
 const routes: Routes = [
@@ -21,7 +22,9 @@ const routes: Routes = [
   {path: 'blog', component: BlogComponent}, 
   {path: 'about', component: AboutComponent},
   {path: 'contact', component: ContactComponent}, 
-  {path: 'umldiagram', component: UmldiagramComponent}
+  {path: 'umldiagram', component: UmldiagramComponent},
+  {path: 'topic/:subtopic', component: TopicComponent},
+  {path: '**',component: NotPageFoundComponent}
 
 ];
 

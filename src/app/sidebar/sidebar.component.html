@@ -14,7 +14,7 @@
             <ul class="subtopics">
 
             <li *ngFor="let subitem of topic.subtopics" class="subtopic nav-item">
-                <a class="nav-link" href="#">{{subitem}}</a>
+                <a class="nav-link" routerLink="/topic/{{subitem}}">{{subitem}}</a>
             </li>
         </ul>
         </li>

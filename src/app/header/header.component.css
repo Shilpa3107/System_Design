@@ -1,19 +1,19 @@
 .navbar-nav li:hover{
     background-color: #555;
 }
-  header #navbar ul li ul{
+  header #navbar ul #menu ul{
     position: absolute;
     width:200px;
     background: black;
-    display:none;
+      display: none;
   }
-  header #navbar ul li ul li{
+  header #navbar ul #menu ul li{
     width:100%;
     border-top:1px solid rgba(0,0,0,.1);
   }
  header #navbar ul li:focus-within>ul,
 
-  header #navbar ul li:hover > ul{
+  header #navbar ul #menu:hover > ul{
     display:initial;
   }
 
