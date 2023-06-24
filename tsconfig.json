@@ -4,6 +4,8 @@
   "compilerOptions": {
     "baseUrl": "./",
     
+
+    
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
@@ -19,7 +21,8 @@
     "module": "es2020",
     "lib": [
       "es2018",
-      "dom"
+      "dom",
+      "ES2021"
     ]
   },
   "angularCompilerOptions": {
