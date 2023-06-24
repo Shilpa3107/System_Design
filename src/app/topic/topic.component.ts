@@ -10,17 +10,30 @@ import { HttpClient } from '@angular/common/http';
 export class TopicComponent implements OnInit {
   subtopic : string = ""
   content : string =""
-  constructor(private route: ActivatedRoute, private http: HttpClient) { }
+  topic : string=""
+  topic2: string=""
+  
+  constructor(private route: ActivatedRoute, private http: HttpClient) { 
+    route.params.subscribe(params => {
+      // put the code from `ngOnInit` here
+      console.log(params);
+      this.subtopic = params.subtopic;
+      this.topic= this.subtopic.split("_")[0];
+      this.topic2=this.subtopic.split("_")[1];
+   
+      console.log(this.subtopic);
+      this.http.get('assets/jsondata/topics.json').subscribe((data: any) => {
+          console.log(data);
+        
+          this.content = data[this.topic][this.topic2];
+          
+          // Use the data as needed in your component
+        });
+    });
+  }
 
   ngOnInit(){
-    this.subtopic = this.route.snapshot.params.subtopic;
-  
-    console.log(this.subtopic);
-    this.http.get('assets/jsondata/data.json').subscribe((data: any) => {
-        console.log(data);
-        this.content = data.topics[0].subtopics[0].content;
-        // Use the data as needed in your component
-      });
+   
   }
 
 }
