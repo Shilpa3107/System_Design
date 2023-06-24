@@ -18,7 +18,7 @@ export class SidebarComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
-    this.http.get('assets/jsondata/topics.json').subscribe((data: any) => {
+    this.http.get('assets/jsondata/data.json').subscribe((data: any) => {
       console.log(data);
       this.topics = data.topics;
       // Use the data as needed in your component

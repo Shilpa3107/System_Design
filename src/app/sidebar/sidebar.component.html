@@ -8,13 +8,14 @@
           <span class="topic" (click)="toggleSubtopics(topic)">
             <i class="fas fa-caret-right" *ngIf="!topic.showSubtopics"></i>
             <i class="fas fa-caret-down" *ngIf="topic.showSubtopics"></i>
-              {{ topic.topic }}
+              {{ topic.name }}
             </span>
          <!-- <ul class="subtopics" *ngIf="topic.showSubtopics">-->
             <ul class="subtopics">
 
-            <li *ngFor="let subitem of topic.subtopics" class="subtopic nav-item">
-                <a class="nav-link" routerLink="/topic/{{subitem}}">{{subitem}}</a>
+            <li *ngFor="let subitem of topic.subtopics; let i = index" class="subtopic nav-item">
+              
+                <a class="nav-link" routerLink="/topic/{{topic.url}}_{{subitem.url}}"> {{subitem.name}}</a>
             </li>
         </ul>
         </li>
