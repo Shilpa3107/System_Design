@@ -1,0 +1,68 @@
+{
+    "topics": [
+        {
+            "name":"Software",
+            "url":"Software",
+            "subtopics":[
+                {
+                "name": "C4 Model",
+                "url":"C4-model",
+                "content":"A popular modeling tool for system design. It is a visual modeling language that helps you to capture the different components of a system and their relationships."
+                },
+                {
+                    "name":"Draw io",
+                    "url":"Draw-io",
+                    "content":"A free online diagramming tool that can be used to create system diagrams."
+                  
+                },
+                {
+                    "name":"Lucidchart",
+                    "url":"Lucidchart",
+                    "content":"A paid diagramming tool that offers more features than Draw.io."
+                }
+         ]    
+        },
+        {
+            "name":"Books",
+            "url":"Books",
+            "subtopics":[
+                {
+                    "name":"Designing Data-Intensive Applications",
+                    "url":"Designing-Data-Intensive-Applications",
+                    "content":"This book by Martin Kleppmann covers the design of large-scale data-intensive applications."
+                },
+                {
+                    "name":"The Pragmatic Programmer",
+                    "url":"The-Pragmatic-Programmer",
+                    "content":"This classic book by Andrew Hunt and David Thomas covers many topics related to software development, including system design."
+                },
+                {
+                    "name":"System Design Interview Handbook",
+                    "url":"System-Design-Interview-Handbook",
+                    "content":"This book by John Sonmez covers the system design interview process. It includes a lot of practice problems and solutions."
+                }
+        ]
+        },
+        {
+            "name":"Online resources",
+            "url":"Online-resources",
+            "subtopics":[
+                {
+                    "name":"System Design Primer",
+                    "url":"System-Design-Primer",
+                    "content":"This website by Martin Kleppmann provides a comprehensive overview of system design."
+                },
+                {
+                    "name":"Grokking the System Design Interview",
+                    "url":"Grokking-the-System-Design-Interview",
+                    "content":"This website by Educative.io provides a course on system design. It includes a lot of video lectures and practice problems."
+                },
+                {
+                    "name":"Leetcode",
+                    "url":"Leetcode",
+                    "content":"This website provides a large number of practice problems for system design."
+                }
+            ]
+        }
+    ]
+}
