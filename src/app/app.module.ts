@@ -18,6 +18,7 @@ import { ToolComponent } from './tool/tool.component';
 import { BlogComponent } from './blog/blog.component';
 import { TopicComponent } from './topic/topic.component';
 import { NotPageFoundComponent } from './not-page-found/not-page-found.component';
+import { ToolmenuComponent } from './toolmenu/toolmenu.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { NotPageFoundComponent } from './not-page-found/not-page-found.component
     ContactComponent,
     UmldiagramComponent,
     TopicComponent,
-    NotPageFoundComponent
+    NotPageFoundComponent,
+    ToolmenuComponent
     
   ],
   imports: [
