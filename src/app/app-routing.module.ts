@@ -11,10 +11,12 @@ import { ToolComponent } from './tool/tool.component';
 import { BlogComponent } from './blog/blog.component';
 import { TopicComponent } from './topic/topic.component';
 import { NotPageFoundComponent } from './not-page-found/not-page-found.component';
+import { FrontComponent } from './front/front.component';
 
 
 const routes: Routes = [
-  {path: '', component: HomeComponent} ,
+  {path: '', component: FrontComponent} ,
+  {path: 'home', component: HomeComponent} ,
   {path: 'methodology', component: MethodologyComponent}, 
   {path: 'casestudies', component: CasestudiesComponent}, 
   {path: 'practices', component: PracticesComponent},
