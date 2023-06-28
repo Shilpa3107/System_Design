@@ -5,7 +5,6 @@
     position: absolute;
     width:200px;
     background: black;
-      display: none;
   }
   header #navbar ul #menu ul li{
     width:100%;
@@ -15,5 +14,8 @@
 
   header #navbar ul #menu:hover > ul{
     display:initial;
+  }
+  header #navbar ul #menu ul{
+    display:none;
   }
 
