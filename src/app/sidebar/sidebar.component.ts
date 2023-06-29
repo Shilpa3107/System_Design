@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-sidebar',
@@ -16,13 +16,17 @@ export class SidebarComponent implements OnInit {
   }
 
   constructor(private http: HttpClient) { }
-
+  @Input() data : string = "";
   ngOnInit(): void {
-    this.http.get('assets/jsondata/data.json').subscribe((data: any) => {
-      console.log(data);
-      this.topics = data.topics;
+    console.log(this.data);
+    this.http.get('assets/jsondata/'+this.data+'.json').subscribe((data1: any) => {
+      console.log(data1);
+      this.topics = data1.topics;
       // Use the data as needed in your component
     });
+    // this.topics = this.data.topics;
+    // console.log("hello");
+    // console.log(this.data);
   }
 
   toggleSubtopics(topic: any) {

@@ -9,10 +9,11 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HomeComponent implements OnInit {
 
+  topics : string="home"
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
-
+  this.topics = "home";
    
   }
 
