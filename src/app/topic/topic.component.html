@@ -1,11 +1,12 @@
 <section class="topic">
   <div class="sidebar">
-    <app-sidebar></app-sidebar>
+    <app-sidebar [data]="topics"></app-sidebar>
+    <!-- <p>{{topics}}</p> -->
   </div>
     <div class="main-content">
         <h1>{{topic2.replaceAll("-"," ")}}</h1>
             <hr>
             <br>
-        <p>{{content.replaceAll("\n"," ")}}</p>
+        <p>{{content}}</p>
     </div>
 </section>
