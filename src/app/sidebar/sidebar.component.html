@@ -10,9 +10,10 @@
             <i class="fas fa-caret-down" *ngIf="topic.showSubtopics"></i>
               {{ topic.name }}
             </span>
-         <!-- <ul class="subtopics" *ngIf="topic.showSubtopics">-->
-            <ul class="subtopics">
-
+            
+         <!-- <ul class="subtopics" *ngIf="topic.showSubtopics"> -->
+            <ul class="subtopics" *ngIf=topic.showSubtopics >
+               
             <li *ngFor="let subitem of topic.subtopics; let i = index" class="subtopic nav-item">
               
                 <a class="nav-link" routerLink="/topic/{{topic.url}}_{{subitem.url}}"> {{subitem.name}}</a>
