@@ -32,7 +32,6 @@ export class TopicComponent implements OnInit {
           console.log(data);
         
           this.content = data[this.topic][this.topic2];
-          
           // Use the data as needed in your component
         });
     });
