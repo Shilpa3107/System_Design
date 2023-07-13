@@ -1,5 +1,16 @@
 <section class="home">
-  <div class="sidebar">
+  
+  <input type ="checkbox" name=""id="Open">
+  <label for="Open" class="sidebarIcon" >
+   <div class="wrapper first"></div>
+   <div class="wrapper second"></div>
+   <div class="wrapper third"></div>
+  </label>
+  <div class="menu" id = "sidebarMenu">
+    <app-sidebar [data]="topics"></app-sidebar>  <!--for showing topics-->
+    <!-- <p>{{topics}}</p> -->
+  </div>
+
     <!-- <app-sidebar ></app-sidebar>
       <app-sidebar></app-sidebar>
     </div> -->
@@ -33,6 +44,6 @@
         <img src="path/to/your/ad-image.jpg" alt="Advertisement">
       </div>
     </div>
-  </div>
+
   </section>
   
