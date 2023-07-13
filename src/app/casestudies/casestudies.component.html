@@ -1,4 +1,15 @@
 <section class = "casestuied-section">
+    <input type ="checkbox" name=""id="Open">
+  <label for="Open" class="sidebarIcon" >
+   <div class="wrapper first"></div>
+   <div class="wrapper second"></div>
+   <div class="wrapper third"></div>
+  </label>
+    <div class="menu" id = "sidebarMenu">
+        <app-sidebar [data]="topics"></app-sidebar>  <!--for showing topics-->
+        <!-- <p>{{topics}}</p> -->
+      </div>
+      <section class = "main-content">
     <h1>Case Studies</h1>
     <hr>
     <br>
@@ -75,6 +86,6 @@ Maintenance of a system design is an essential aspect of ensuring its continued 
 <li>  Continuous Improvement: Encourage feedback from users and stakeholders to identify areas for improvement. Use analytics and user insights to understand usage patterns, identify pain points, and prioritize enhancements that align with user needs and business objectives.</li>
 </ul>
 Maintenance activities are typically carried out by a dedicated team or individuals responsible for system operations and support. The frequency and intensity of maintenance tasks will vary depending on the complexity of the system, the user base, and the criticality of the system's function to the organization.
-
 </div>
+</section>
 </section>
