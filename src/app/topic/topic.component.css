@@ -1,7 +1,8 @@
  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Josefin+Sans:wght@200;300&family=Roboto:ital,wght@1,100&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Josefin+Sans:wght@200;300&family=Pacifico&family=Roboto:ital,wght@1,100&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@500&family=Dosis&family=Josefin+Sans:wght@200;300&family=Lobster&family=Pacifico&family=Roboto:ital,wght@1,100&display=swap');
-
+ @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+ 
 .topic {
     display: flex;
     justify-content: space-between;
@@ -12,11 +13,12 @@
     flex: 0 0 200px;
     background-color: #f8f9fa;
   }
-  
-  h1{
-    text-align: center;
-    font-family: 'Lobster', cursive;
- }
+   h1{
+     text-align: center;
+     font-family: 'Poppins', sans-serif;
+     margin-top: 4px;
+     font-weight: bold;
+  }
  div{
   font-size: xx-large;
     font-family: 'Dosis', sans-serif;
