@@ -86,12 +86,12 @@ div{
   box-sizing: border-box;
 }
 #sidebarMenu{
-  height:100%;
+  height:90%;
   position:fixed;
   left:0;    /* position of sidebar topics    */
   top:13px;       /* position of sidebar topics    */
   width:200px;
-  margin-top:60px;
+  margin-top:80px;
   /*color of sidebar topics   */
 }
 .menu{
@@ -158,5 +158,11 @@ div{
   margin-top: -9px;
 }
 }
-
+#sidebarMenu{
+  top:0;
+  bottom:0;
+  position:fixed;
+  overflow-y: scroll;
+  width:250px;
+}
   
