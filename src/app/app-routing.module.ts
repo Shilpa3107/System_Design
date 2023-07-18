@@ -26,6 +26,7 @@ const routes: Routes = [
   {path: 'contact', component: ContactComponent}, 
   {path: 'umldiagram', component: UmldiagramComponent},
   {path: 'topic/:subtopic', component: TopicComponent},
+  {path: 'casestudies/:subtopic', component: CasestudiesComponent},
   {path: '**',component: NotPageFoundComponent}
 
 ];
