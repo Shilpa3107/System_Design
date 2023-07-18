@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Josefin+Sans:wght@200;300&family=Lobster&family=Pacifico&family=Roboto:ital,wght@1,100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@500&family=Dosis&family=Josefin+Sans:wght@200;300&family=Lobster&family=Pacifico&family=Roboto:ital,wght@1,100&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 h1{
    text-align: center;
-   font-family: 'Lobster', cursive;
+   font-family: 'Poppins', sans-serif;
+   margin-top: 4px;
+   font-weight: bold;
 }
 div{
    font-family: 'Dosis', sans-serif;
@@ -52,6 +54,7 @@ div{
   section{
     background-image: url("https://img.freepik.com/free-vector/white-background-with-blue-tech-hexagon_1017-19366.jpg?w=996&t=st=1687872269~exp=1687872869~hmac=2d9aedbbeea8ea6df0118f9a2ae7d464c1a8c80ec6ec426c198f1e0929ac352d");
     font-weight: bold;
+    margin-left:20px;
   }
   .content img{
     width:100px;
@@ -132,7 +135,7 @@ div{
 
 @media(max-width:915px){
   .main-content{
-    margin-left:0px;
+    margin-left:20px;
  }
   #sidebarMenu{
     transform: translateX(-300px); /*  for disappearing the sidebar whose width 250px */
