@@ -13,21 +13,30 @@
     background-color: #f8f9fa;
   }
   
+  h1{
+    text-align: center;
+    font-family: 'Lobster', cursive;
+ }
+ div{
+  font-size: xx-large;
+    font-family: 'Dosis', sans-serif;
+    font-size:large;
+ }
   .main-content {
     flex: 1;
     padding: 0 20px;
     text-align: left;
   }
-  p{
-    font-size: xx-large;
+  /* p{
+    
     font-family: 'Dosis', sans-serif;
-    font-size:large;
-  }
-  h1{
+    
+  } */
+  /* h1{
     text-align: center;
     font-family: 'Pacifico', cursive;
 
-  }
+  } */
   section{
     background-image: url("https://img.freepik.com/free-vector/white-background-with-blue-tech-hexagon_1017-19366.jpg?w=996&t=st=1687872269~exp=1687872869~hmac=2d9aedbbeea8ea6df0118f9a2ae7d464c1a8c80ec6ec426c198f1e0929ac352d");
     font-weight: lighter;

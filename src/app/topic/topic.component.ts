@@ -13,7 +13,6 @@ export class TopicComponent implements OnInit {
   topic : string=""
   topic2: string=""
   topics: string = "topic"
-  
   constructor(private route: ActivatedRoute, private http: HttpClient) { 
     route.params.subscribe(params => {
       // put the code from `ngOnInit` here
@@ -38,7 +37,7 @@ export class TopicComponent implements OnInit {
     });
     
   }
- 
+
   ngOnInit(){
    
       // Use the data as needed in your component
