@@ -50,11 +50,9 @@
     gap:60px;
   }
   .nav-branding{
-    font-size: 2rem;
+    font-size: 32px;
   }
-  .nav-link{
-    transition: 0.7s ease;
-  }
+  
   .nav-link:hover{
     color:dodgerblue;
   }
