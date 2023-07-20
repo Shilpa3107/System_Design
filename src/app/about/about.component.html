@@ -8,22 +8,23 @@
     <p>Explore our tutorials, case studies, and practical examples to learn how to design systems that can handle millions of users, ensure high availability, and deliver exceptional performance. Stay updated with the latest trends and technologies in system design to stay ahead in your career.</p>
   </div>
    <table class=table>
-    <thead>
-      <tr>
-        <th *ngFor= "let list of lists" >
-          {{list}}
+    
+    <tr>
+        <th *ngFor= "let list of Users" >
+          {{list.name}}
         </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor = "let lc of Users">
-        <td>{{lc.C}}</td>
-        <td>{{lc.Cpp}}</td>
-        <td>{{lc.Java}}</td>
-        <td>{{lc.python}}</td>
-        <td>{{lc.SaaS}}</td>
-      </tr>
-    </tbody>
+    </tr>
+    
+    
+      <td *ngFor = "let k of Users">
+       <tr><li>{{k.content1}}</li></tr>
+       <tr><li>{{k.content2}}</li></tr>
+       <tr><li>{{k.content3}}</li></tr>
+        <tr><li>{{k.content4}}</li></tr>
+       <tr><li>{{k.content5}}</li></tr>
+      </td>
+     
+    
   </table>
 </section>
 
