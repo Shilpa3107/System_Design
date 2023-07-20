@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PracticesComponent implements OnInit {
 
+  topics : string="practices"
   constructor() { }
 
   ngOnInit(): void {
+    this.topics = "practices";
   }
 
 }
