@@ -23,7 +23,7 @@ section{
    box-sizing: border-box;
  }
  #sidebarMenu{
-   height:90%;
+   height:70%;
    position:fixed;
    left:0;    /* position of sidebar topics    */
    top:20px;       /* position of sidebar topics    */
