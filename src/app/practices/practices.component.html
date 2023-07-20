@@ -1,4 +1,15 @@
 <section class = "practices-section">
+    <input type ="checkbox" name=""id="Open">
+    <label for="Open" class="sidebarIcon" >
+     <div class="wrapper first"></div>
+     <div class="wrapper second"></div>
+     <div class="wrapper third"></div>
+    </label>
+      <div class="menu" id = "sidebarMenu">
+          <app-sidebar [data]="topics"></app-sidebar>  <!--for showing topics-->
+          <!-- <p>{{topics}}</p> -->
+        </div>
+        <section class = "main-content">
     <h1>Best-Practices</h1>
     <hr>
     <br>
@@ -21,3 +32,4 @@
 </div>
 </section>
 
+</section>
