@@ -8,11 +8,11 @@ import { HttpClient } from '@angular/common/http';
 })
 export class CasestudiesComponent implements OnInit {
 
-  topics : string="casestudies"
+  topics : string="casestudies1"
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
-  this.topics = "casestudies";
+  this.topics = "casestudies1";
   }
 
 }
