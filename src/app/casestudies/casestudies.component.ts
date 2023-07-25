@@ -13,13 +13,13 @@ export class CasestudiesComponent implements OnInit {
   subtopicUrl: string = "";
   content: string = "";
   sub: string=" ";
-  topics : string="casestudies1"
+  topics : string="casestudies"
   constructor(private route: ActivatedRoute, private http: HttpClient) {
    
    }
 
   ngOnInit(): void {
-  this.topics = "casestudies1";
+  this.topics = "casestudies";
   this.route.params.subscribe(params => {
     const subtopic = params.subtopic;
     console.log("Subtopic received:", subtopic);
@@ -28,7 +28,7 @@ export class CasestudiesComponent implements OnInit {
     console.log("Parsed topic URL:", topicUrl);
     console.log("Parsed subtopic URL:", subtopicUrl);
     this.sub = subtopicUrl;
-    this.http.get('assets/jsondata/casestudies1.json').subscribe((data: any) => {
+    this.http.get('assets/jsondata/casestudies.json').subscribe((data: any) => {
       console.log("Data received:", data);
 
       if (!data || !data.topics || !Array.isArray(data.topics)) {
