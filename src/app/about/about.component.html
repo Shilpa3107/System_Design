@@ -9,7 +9,13 @@
   </div>
   <header>
    
-    <h3 >Difference between <ng-container *ngFor = "let c of Users; let lastItem = last" id = "diff">{{c.name}} <span  *ngIf="!lastItem"> , </span></ng-container></h3>
+    <h3 >Difference between  <p class="diff">
+      <ng-container *ngFor="let user of Users; let i = index">
+        {{ user.name }}
+        <span *ngIf="i < Users.length - 2">,</span>  
+        <span *ngIf="i === Users.length - 2"> and</span>
+      </ng-container>
+    </p></h3>
     
   </header>
    <table class=table>
@@ -26,7 +32,7 @@
   </table>
 </section>
 
-
+<!-- <ng-container *ngFor = "let c of Users; let lastItem = last" id = "diff">{{c.name}} <span  *ngIf="!lastItem"> , </span></ng-container> used  to remove last element -->
 
 
 
