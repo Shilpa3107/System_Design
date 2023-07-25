@@ -10,18 +10,19 @@ export class SidebarComponent implements OnInit {
 
   isCollapsed: boolean = false;
   topics: Array<any> = []
-
+  // name1: string=""
   toggleSidebar() {
     this.isCollapsed = !this.isCollapsed;
   }
-
-  constructor(private http: HttpClient) { }
   @Input() data : string = "";
+  constructor(private http: HttpClient) { }
+
   ngOnInit(): void {
     console.log(this.data);
     this.http.get('assets/jsondata/'+this.data+'.json').subscribe((data1: any) => {
       console.log(data1);
       this.topics = data1.topics;
+      // this.name1 = this.data;
       // Use the data as needed in your component
     });
     // this.topics = this.data.topics;
