@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit {
     console.log("Parsed topic URL:", topicUrl);
     console.log("Parsed subtopic URL:", subtopicUrl);
     this.sub = subtopicUrl;
-    this.http.get('assets/jsondata/data.json').subscribe((data: any) => {
+    this.http.get('assets/jsondata/home.json').subscribe((data: any) => {
       console.log("Data received:", data);
 
       if (!data || !data.topics || !Array.isArray(data.topics)) {
