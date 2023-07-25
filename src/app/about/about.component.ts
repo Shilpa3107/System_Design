@@ -3,11 +3,8 @@ import { Component, OnInit } from '@angular/core';
 
 interface USERS {
   name?: String;
-  content1?: String;
-  content2?: String;
-  content3?:String;
-  content4?: String;
-  content5?: String;
+  content?: String[];
+  
 }
 
 @Component({
@@ -70,46 +67,27 @@ export class AboutComponent implements OnInit {
   Users: Array<USERS> = [
     {
       "name":"C",
-      "content1":"C was developed by Dennis Ritchie between the year 1969 and 1973 at AT&T Bell Labs.",
-      "content2": "C does no support polymorphism, encapsulation, and inheritance which means that C does not support object oriented programming.",
-      "content3": "C is (mostly) a subset of C++.",
-      "content4": "Data and functions are separated in C because it is a procedural programming language.",
-      "content5": "C does not support information hiding."
+      "content":["C was developed by Dennis Ritchie between the year 1969 and 1973 at AT&T Bell Labs.","C does no support polymorphism, encapsulation, and inheritance which means that C does not support object oriented programming.","C is (mostly) a subset of C++.","Data and functions are separated in C because it is a procedural programming language.","C does not support information hiding."]
     },
     {
       "name":"C++",
-      "content1": "C++ was developed by Bjarne Stroustrup in 1979.",
-      "content2": "C++ supports polymorphism, encapsulation, and inheritance because it is an object oriented programming language.",
-      "content3":"C++ is (mostly) a superset of C.",
-      "content4":"Data and functions are encapsulated together in form of an object in C++.",
-      "content5":"Data is hidden by the Encapsulation to ensure that data structures and operators are used as intended."
-    },
+      "content": ["C++ was developed by Bjarne Stroustrup in 1979.","C++ supports polymorphism, encapsulation, and inheritance because it is an object oriented programming language.","C++ is (mostly) a superset of C.","Data and functions are encapsulated together in form of an object in C++.","Data is hidden by the Encapsulation to ensure that data structures and operators are used as intended."]
+    }
+    ,
     {
       "name":"Java",
-      "content1":"Java was developed by Dennis Ritchie between the year 1969 and 1973 at AT&T Bell Labs.",
-      "content2":"Java does no support polymorphism, encapsulation, and inheritance which means that C does not support object oriented programming.",
-      "content3":"Java is (mostly) a subset of C++.",
-      "content4":"Data and functions are separated in Java because it is a procedural programming language.",
-      "content5":"Java does not support information hiding."
+      "content":["Java was developed by Dennis Ritchie between the year 1969 and 1973 at AT&T Bell Labs.","Java does no support polymorphism, encapsulation, and inheritance which means that C does not support object oriented programming.","Java is (mostly) a subset of C++.","Data and functions are separated in Java because it is a procedural programming language."]
     },
     {
       "name":"python",
-      "content1": "python was developed by Bjarne Stroustrup in 1979.",
-      "content2": "python supports polymorphism, encapsulation, and inheritance because it is an object oriented programming language.",
-      "content3":"python is (mostly) a superset of C.",
-      "content4":"Data and functions are encapsulated together in form of an object in python.",
-      "content5":"Data is hidden by the Encapsulation to ensure that data structures and operators are used as intended."
+      "content":["python was developed by Bjarne Stroustrup in 1979.","python supports polymorphism, encapsulation, and inheritance because it is an object oriented programming language.","python is (mostly) a superset of C.","Data and functions are encapsulated together in form of an object in python.","Data is hidden by the Encapsulation to ensure that data structures and operators are used as intended."]
     },
     {
       "name":"SaaS",
-      "content1":"SaaS was developed by Dennis Ritchie between the year 1969 and 1973 at AT&T Bell Labs.",
-      "content2": "SaaS does no support polymorphism, encapsulation, and inheritance which means that C does not support object oriented programming.",
-      "content3": "SaaS is (mostly) a subset of C++.",
-      "content4": "Data and functions are separated in SaaS because it is a procedural programming language.",
-      "content5": "SaaS does not support information hiding."
+      "content":["Saas was developed by Dennis Ritchie between the year 1969 and 1973 at AT&T Bell Labs.","Saas does no support polymorphism, encapsulation, and inheritance which means that Saas does not support object oriented programming.","Saas is (mostly) a subset of C++.","Data and functions are separated in Saas because it is a procedural programming language.","Saas does not support information hiding."]
     }
+    
   ];
-
   constructor() {}
 
   ngOnInit(): void {

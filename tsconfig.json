@@ -5,11 +5,12 @@
     "baseUrl": "./",
     "resolveJsonModule": true,
     "esModuleInterop": true,
-
+    "noImplicitAny": false,
     
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
+    "noImplicitOverride": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
