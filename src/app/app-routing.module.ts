@@ -17,6 +17,7 @@ import { FrontComponent } from './front/front.component';
 const routes: Routes = [
   {path: '', component: FrontComponent} ,
   {path: 'home', component: HomeComponent} ,
+  {path: 'home/:subtopic', component: HomeComponent} ,
   {path: 'methodology', component: MethodologyComponent}, 
   {path: 'casestudies', component: CasestudiesComponent}, 
   {path: 'casestudies/:subtopic', component: CasestudiesComponent},

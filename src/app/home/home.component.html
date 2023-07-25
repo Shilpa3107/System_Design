@@ -10,10 +10,16 @@
     <app-sidebar [data]="topics"></app-sidebar>  <!--for showing topics-->
     <!-- <p>{{topics}}</p> -->
   </div>
-
+  <div class = "sideview" *ngIf="content; else noContent">
+    <h2 class="subhead"> {{ sub.replaceAll("-"," ") }}</h2>
+    <hr>
+    <br>
+    <p>{{ content }}</p>
+  </div>
     <!-- <app-sidebar ></app-sidebar>
       <app-sidebar></app-sidebar>
     </div> -->
+    <ng-template #noContent>
         <div class="main-content">
       <div class="ads">
         <!-- Your ad code goes here -->
@@ -44,6 +50,6 @@
         <img src="path/to/your/ad-image.jpg" alt="Advertisement">
       </div>
     </div>
-
+  </ng-template>
   </section>
   
