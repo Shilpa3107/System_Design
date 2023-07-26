@@ -7,8 +7,22 @@
   </label>
     <div class="menu" id = "sidebarMenu">
         <app-sidebar [data]="topics"></app-sidebar>  <!--for showing topics-->
+    <!-- </div>
+    <div class="main-content">
+        <h1>{{topic2.replaceAll("-"," ")}}</h1>
+            <hr>
+            <br>
+        <p>{{content}}</p> -->
+    
         <!-- <p>{{topics}}</p> -->
       </div>
+      <div class = "sideview" *ngIf="content; else noContent">
+        <h2 class="subhead"> {{ sub.replaceAll("-"," ") }}</h2>
+        <hr>
+        <br>
+        <p>{{ content }}</p>
+      </div>
+      <ng-template #noContent>
       <section class = "main-content">
     <h1>Case Studies</h1>
     <hr>
@@ -88,4 +102,5 @@ Maintenance of a system design is an essential aspect of ensuring its continued 
 Maintenance activities are typically carried out by a dedicated team or individuals responsible for system operations and support. The frequency and intensity of maintenance tasks will vary depending on the complexity of the system, the user base, and the criticality of the system's function to the organization.
 </div>
 </section>
+</ng-template>
 </section>

@@ -17,8 +17,10 @@ import { FrontComponent } from './front/front.component';
 const routes: Routes = [
   {path: '', component: FrontComponent} ,
   {path: 'home', component: HomeComponent} ,
+  {path: 'home/:subtopic', component: HomeComponent} ,
   {path: 'methodology', component: MethodologyComponent}, 
   {path: 'casestudies', component: CasestudiesComponent}, 
+  {path: 'casestudies/:subtopic', component: CasestudiesComponent},
   {path: 'practices', component: PracticesComponent},
   {path: 'tool', component: ToolComponent}, 
   {path: 'blog', component: BlogComponent}, 
@@ -26,7 +28,6 @@ const routes: Routes = [
   {path: 'contact', component: ContactComponent}, 
   {path: 'umldiagram', component: UmldiagramComponent},
   {path: 'topic/:subtopic', component: TopicComponent},
-  {path: 'casestudies/:subtopic', component: CasestudiesComponent},
   {path: '**',component: NotPageFoundComponent}
 
 ];
