@@ -4,6 +4,12 @@
     box-sizing:border-box;
 
   }
+  a.active{
+    height:30px;
+    
+    background-color: rgb(200, 38, 232);
+    color: white;
+  }
   header{
     background-color: rgb(47, 255, 102);
   }
