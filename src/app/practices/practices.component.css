@@ -31,6 +31,9 @@ section{
     margin-top:80px;
     /*color of sidebar topics   */
   }
+  .sideview{
+    margin-left: 250px;
+   }
   .menu{
     list-style: none;  /*for removing dotted part from the list*/
     padding:0;    /* for removing space from the left*/
@@ -68,6 +71,9 @@ section{
   }
   
   @media(max-width:915px){
+    .sideview{
+      margin-left: 0px;
+     }
     .main-content{
       margin-left:0px;
    }
@@ -102,3 +108,8 @@ section{
    overflow-y: scroll;
    width:250px;
  }
+ .subhead{
+  text-align:center;
+  margin: 10px;
+  font-weight: bolder;
+}
