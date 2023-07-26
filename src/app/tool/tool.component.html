@@ -1,10 +1,26 @@
 <section class = "tool-section">
-  <h1>Tools & Resources</h1>
-  <hr>
-  <br>
-   <p>
-      There are various tools and resources available to support system design. Here are some tools and resources for system design:
-      <ul>
+    <input type ="checkbox" name=""id="Open">
+    <label for="Open" class="sidebarIcon" >
+     <div class="wrapper first"></div>
+     <div class="wrapper second"></div>
+     <div class="wrapper third"></div>
+    </label>
+          <div class="menu" id = "sidebarMenu">
+          <app-sidebar [data]="topics"></app-sidebar>  
+        </div>
+        <div class = "sideview" *ngIf="content; else noContent">
+          <h2 class="subhead"> {{ sub.replaceAll("-"," ") }}</h2>
+          <hr>
+          <br>
+          <p>{{ content }}</p>
+        </div> 
+        <ng-template #noContent>
+    <div class="main-content">
+       <h1>Tools & Resources</h1>
+       <hr>
+       <br>
+       <p>There are various tools and resources available to support system design. Here are some tools and resources for system design:
+       <ul>
           <li><h3>Software:</h3> There are any differeent software tools that can be used for system design. Some popular tools include:
               <ul>
                   <br>
@@ -24,8 +40,10 @@
                   <li><h5>Lucidchart:</h5> A paid diagramming tool that offers more features than Draw.io.
                       <br>
                       <a href = "https://www.lucidchart.com/pages/examples/flowchart_software">Lucidchart</a>
-Expand All
-@@ -31,14 +34,17 @@ <h5>C4 Model:</h5> A popular modeling tool for system design. It is a visual mod
+                 </li>
+             </ul>
+         </li>
+         <li>
               <h3>Books:</h3> There are many books that can help you learn about system design. Some popular books include:
               <ul>
                   <li>
@@ -43,9 +61,9 @@ Expand All
                   <li><h5>System Design Interview Handbook:</h5> This book by John Sonmez covers the system design interview process. It includes a lot of practice problems and solutions.
                       <br>
                       <img src="https://lh3.googleusercontent.com/bip/AKnpU_y2b2xPVauVcfOFRhL_Rm9iIWuC52ARY4su2R0gEJde-LNgXwnNVGXQLdt1yKg_uokSsnOSKGP9B4CV-zWwvFrS_KcSIaLY4_o0M7P82vBbCGXX2Qs283gjT2L_0tNyqPqZ6mYPblmCpl7m_WQ=w250-h200-p" alt=" system_design_review">
-Expand All
-@@ -48,18 +54,21 @@ <h5>Designing Data-Intensive Applications:</h5> This book by Martin Kleppmann co
-          <br>
+                 </li>
+                </ul>
+            </li>
           <li><h3>Online resources:</h3> There are many online resources that can help you learn about system design. Some popular resources include:
               <ul>
                   <br>
@@ -66,3 +84,12 @@ Expand All
                   <li><h5>LeetCode:</h5> This website provides a large number of practice problems for system design.
                       <br>
                       <a href = "https://leetcode.com/discuss/general-discussion/1124385/leetcode-complete-beginners-guide-i">Leetcode</a>
+                  </li>
+                </ul>
+         </li>
+                      
+        </ul>
+    </div>
+   </ng-template>
+</section>
+                      
