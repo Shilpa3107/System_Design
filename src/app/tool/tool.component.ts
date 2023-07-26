@@ -1,5 +1,7 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-tool',
@@ -7,26 +9,57 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tool.component.css']
 })
 export class ToolComponent implements OnInit {
-
-  isCollapsed: boolean = false;
-  topics: Array<any> = []
-
-  toggleTool() {
-    this.isCollapsed = !this.isCollapsed;
-  }
-
-  constructor(private http: HttpClient) { }
+  topicUrl: string = "";
+  subtopicUrl: string = "";
+  content: string = "";
+  sub: string=" ";
+  topics : string="tool"
+  constructor(private route: ActivatedRoute, private http: HttpClient) { }
 
   ngOnInit(): void {
-    this.http.get('assets/jsondata/data1.json').subscribe((data1: any) => {
-      console.log(data1);
-      this.topics = data1.topics;
-      // Use the data1 as needed in your component
-    });
-  }
 
-  toggleSubtopics(topic: any) {
-    topic.showSubtopics = !topic.showSubtopics;
+  this.topics = "tool";
+  
+  this.route.params.subscribe(params => {
+    const subtopic = params.subtopic;
+    console.log("Subtopic received:", subtopic);
+   
+    const [topicUrl, subtopicUrl] = subtopic.split("_");
+    console.log("Parsed topic URL:", topicUrl);
+    console.log("Parsed subtopic URL:", subtopicUrl);
+    this.sub = subtopicUrl;
+    this.http.get('assets/jsondata/tool.json').subscribe((data: any) => {
+      console.log("Data received:", data);
+
+      if (!data || !data.topics || !Array.isArray(data.topics)) {
+        this.content = "Data format error: Unable to find topics.";
+        return;
+      }
+
+      const topic = data.topics.find((t: any) => t.url === topicUrl);
+      console.log("Found topic:", topic);
+
+      if (!topic) {
+        this.content = "Topic not found.";
+        return;
+      }
+
+      console.log("Topic subtopics:", topic.subtopics);
+
+      const subtopicObj = topic.subtopics.find((subt: any) => subt.url === subtopicUrl);
+      console.log("Found subtopicObj:", subtopicObj);
+
+      if (!subtopicObj) {
+        this.content = "Subtopic not found.";
+        return;
+      }
+
+      this.content = subtopicObj.content;
+    }, (error) => {
+      console.error("Error fetching data:", error);
+      this.content = "Error fetching data. Please try again later.";
+    });
+  });
   }
 
 }
