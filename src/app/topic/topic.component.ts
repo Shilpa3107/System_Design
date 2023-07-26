@@ -14,6 +14,7 @@ export class TopicComponent implements OnInit {
   topic2: string=""
   topics: string = "topic"
   constructor(private route: ActivatedRoute, private http: HttpClient) { 
+    this.topics= "topic"
     route.params.subscribe(params => {
       // put the code from `ngOnInit` here
       console.log(params);
@@ -27,7 +28,7 @@ export class TopicComponent implements OnInit {
         // console.log(data);
         this.topics = "data";
       // });
-      this.http.get('assets/jsondata/topics.json').subscribe((data: any) => {
+      this.http.get('assets/jsondata/topic.json').subscribe((data: any) => {
           
           console.log(data);
         
