@@ -22,6 +22,7 @@ const routes: Routes = [
   {path: 'casestudies', component: CasestudiesComponent}, 
   {path: 'casestudies/:subtopic', component: CasestudiesComponent},
   {path: 'practices', component: PracticesComponent},
+  {path: 'practices/:subtopic', component: PracticesComponent},
   {path: 'tool', component: ToolComponent}, 
   {path: 'blog', component: BlogComponent}, 
   {path: 'about', component: AboutComponent},
