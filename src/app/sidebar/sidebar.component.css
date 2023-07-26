@@ -86,6 +86,10 @@
   .sidebar li a:hover{
     color:green;
   }
+  a.active{
+    background-color: rgb(67, 222, 170);
+    color:#fff;
+  }
   /* .subtopics li a:visited{
     color:pink;
   } */
