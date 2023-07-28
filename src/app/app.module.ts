@@ -21,6 +21,7 @@ import { NotPageFoundComponent } from './not-page-found/not-page-found.component
 import { ToolmenuComponent } from './toolmenu/toolmenu.component';
 import { FrontComponent } from './front/front.component';
 import { TableComponent } from './table/table.component';
+import { TablepopupComponent } from './tablepopup/tablepopup.component';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { TableComponent } from './table/table.component';
     NotPageFoundComponent,
     ToolmenuComponent,
     FrontComponent,
-    TableComponent
+    TableComponent,
+    TablepopupComponent
     
   ],
   imports: [
