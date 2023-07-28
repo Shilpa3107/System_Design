@@ -1,5 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+
+interface TableData{
+  name: string;
+  content: string[];
+}
 
 @Component({
   selector: 'app-table',
@@ -7,15 +12,15 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./table.component.css']
 })
 export class TableComponent implements OnInit {
-  Users:{
-  name: string
-  content: string[]}[] = [];
+  @Input() data : string = "";
+  tableData: TableData = {name: "", content: []};
 
   constructor(private httpClient: HttpClient) { }
 
   ngOnInit() {
-    this.httpClient.get('assets/jsondata/table.json').subscribe((data:any) =>{
-      this.Users = data;
+    this.httpClient.get<TableData>('assets/jsondata/'+this.data+'.json').subscribe((data:any) =>{
+      this.tableData = data;
+      console.log("Fetched data: ",data);
     });
   }
 
