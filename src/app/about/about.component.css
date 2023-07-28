@@ -15,7 +15,7 @@ section{
    font-weight: bold;
    margin-left:20px;
  }
- .table th{
+ /* .table th{
    text-align: center;
  }
  table,th,td{
@@ -31,9 +31,9 @@ section{
   overflow: hidden;
   text-overflow: ellipsis;
   /* font-weight: bold;
-  font-size: large; */
+  font-size: large; 
  }
  .table{
   font-family: 'Dosis', sans-serif;
- }
+ } */
  
