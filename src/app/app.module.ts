@@ -20,6 +20,8 @@ import { TopicComponent } from './topic/topic.component';
 import { NotPageFoundComponent } from './not-page-found/not-page-found.component';
 import { ToolmenuComponent } from './toolmenu/toolmenu.component';
 import { FrontComponent } from './front/front.component';
+import { TableComponent } from './table/table.component';
+import { TablepopupComponent } from './tablepopup/tablepopup.component';
 
 
 @NgModule({
@@ -40,7 +42,9 @@ import { FrontComponent } from './front/front.component';
     TopicComponent,
     NotPageFoundComponent,
     ToolmenuComponent,
-    FrontComponent
+    FrontComponent,
+    TableComponent,
+    TablepopupComponent
     
   ],
   imports: [

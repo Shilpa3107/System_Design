@@ -1,0 +1,53 @@
+<!-- <section class = "table">
+    <header>
+   
+        <h3 >Difference between  <p class="diff">
+          <ng-container *ngFor="let user of tableData.name; let i = index">
+            {{ user }}
+            <span *ngIf="i < tableData.name.length - 2">,</span>  
+            <span *ngIf="i === tableData.name.length - 2"> and</span>
+          </ng-container>
+        </p></h3>
+        
+      </header>
+
+    <table class=table>
+        <tr>
+             <th *ngFor= "let list of tableData.name" >
+               {{list}}
+             </th>
+         </tr>
+         <td *ngFor = "let k of tableData.content">
+            <tr *ngFor = "let g of k.content" class="lines"> -->
+             <!-- <li>{{k}}</li> -->
+           <!-- </tr> -->
+         <!-- </td>
+       </table>
+</section>
+--> 
+<section class="table">
+  <header>
+    <h3>Difference between
+      <p class="diff">
+        <ng-container *ngFor="let user of tableData.name; let i = index">
+          {{ user }}
+          <span *ngIf="i < tableData.name.length - 2">,</span>
+          <span *ngIf="i === tableData.name.length - 2"> and</span>
+        </ng-container>
+      </p>
+    </h3>
+  </header>
+
+  <table class="table">
+    <tr>
+      <th *ngFor="let item of tableData.name">
+        {{ item }}
+      </th>
+    </tr>
+    <td *ngFor ="let c of tableData.content">
+      <tr *ngFor ="let g of c">
+        {{g}}
+      </tr>
+    </td>
+  </table>
+</section>

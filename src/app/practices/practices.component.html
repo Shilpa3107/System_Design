@@ -9,6 +9,13 @@
           <app-sidebar [data]="topics"></app-sidebar>  <!--for showing topics-->
           <!-- <p>{{topics}}</p> -->
         </div>
+        <div class = "sideview" *ngIf="content; else noContent">
+          <h2 class="subhead"> {{ sub.replaceAll("-"," ") }}</h2>
+          <hr>
+          <br>
+          <p>{{ content }}</p>
+        </div>
+        <ng-template #noContent>
         <section class = "main-content">
     <h1>Best-Practices</h1>
     <hr>
@@ -31,5 +38,5 @@
 
 </div>
 </section>
-
+</ng-template>
 </section>

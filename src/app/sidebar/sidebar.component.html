@@ -16,7 +16,7 @@
                
             <li *ngFor="let subitem of topic.subtopics; let i = index" class="subtopic nav-item">
               
-                <a class="nav-link" [routerLink]="['/' + data, topic.url + '_' + subitem.url]">{{ subitem.name }}</a>
+                <a class="nav-link" [routerLink]="['/' + data, topic.url + '_' + subitem.url]"  routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">{{ subitem.name }}</a>
             </li>
         </ul>
         </li>
