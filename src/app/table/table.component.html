@@ -1,1 +1,26 @@
-<section class = "table"></section>
+<section class = "table">
+    <header>
+   
+        <h3 >Difference between  <p class="diff">
+          <ng-container *ngFor="let user of Users; let i = index">
+            {{ user.name }}
+            <span *ngIf="i < Users.length - 2">,</span>  
+            <span *ngIf="i === Users.length - 2"> and</span>
+          </ng-container>
+        </p></h3>
+        
+      </header>
+
+    <table class=table>
+        <tr>
+             <th *ngFor= "let list of Users" >
+               {{list.name}}
+             </th>
+         </tr>
+         <td *ngFor = "let k of Users">
+           <tr *ngFor = "let g of k.content" class="lines">
+             <li>{{g}}</li>
+           </tr>
+         </td>
+       </table>
+</section>

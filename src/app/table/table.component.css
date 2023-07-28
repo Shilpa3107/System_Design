@@ -1,0 +1,23 @@
+.table th{
+    text-align: center;
+  }
+  table,th,td{
+    border:3px solid;
+  }
+  h3{
+   margin-left:280px;
+   font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+  }
+  .diff{
+   display: inline; 
+   overflow: hidden;
+   text-overflow: ellipsis;
+
+  }
+  .table{
+   font-family: 'Dosis', sans-serif;
+  }
+  .lines{
+    border:0px;
+  }
