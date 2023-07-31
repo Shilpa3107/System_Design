@@ -21,5 +21,6 @@
 /* Style the popup icon */
 .popup-icon {
   font-size: 24px; /* Adjust the icon size as per your preference */
-  color: white; /* Adjust the icon color as per your preference */
+  color: orchid; /* Adjust the icon color as per your preference */
+  background-color: antiquewhite;
 }
