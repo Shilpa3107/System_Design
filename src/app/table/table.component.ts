@@ -13,6 +13,7 @@ interface TableData{
 })
 export class TableComponent implements OnInit {
   @Input() data : string = "";
+  @Input() isVisible: boolean =false;
   tableData: TableData[] = [];
 
   constructor(private httpClient: HttpClient) { }
