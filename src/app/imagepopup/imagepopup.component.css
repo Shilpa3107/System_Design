@@ -1,0 +1,33 @@
+/* Style the image popup container */
+.image-popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999; /* Ensure the popup is displayed above other content */
+    cursor: pointer;
+  }
+  
+  /* Style the image popup */
+  .image-popup {
+    position: relative; /* Add this to make sure the icon is positioned relative to the popup */
+    max-width: 80%; /* Set the maximum width for the popup */
+    max-height: 80%; /* Set the maximum height for the popup */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; /* Add some padding to the popup */
+    box-sizing: border-box;
+  }
+  
+  /* Style the popup icon */
+  .popup-icon {
+    position: absolute;
+    top: 540px; /* Adjust the top position as per your preference */
+    right: 20px; /* Adjust the right position as per your preference */
+    font-size: 24px; /* Adjust the icon size as per your preference */
+    color: orangered; /* Adjust the icon color as per your preference */
+    z-index: 1; /* Ensure the icon is displayed above the image */
+  }
+  

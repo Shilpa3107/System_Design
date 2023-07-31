@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-imagepopup',
@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./imagepopup.component.css']
 })
 export class ImagepopupComponent implements OnInit {
-
+  @Input() imageUrl: string = "";
+  showImage: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  toggleImage(): void{
+    this.showImage = !this.showImage;
   }
 
 }

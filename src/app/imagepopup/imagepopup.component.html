@@ -1,1 +1,15 @@
-<p>imagepopup works!</p>
+<section class = "imagepopup">
+    <div class="image-popup-container">
+        <div class="image-popup" *ngIf = "showImage">
+            <img [src] = "imageUrl" alt ="Popup Image">
+        </div>
+        <div class ="popup-icon" (click)="toggleImage()">
+            <!-- <ng-container *ngIf="!showImage; else hideImage"> -->
+            <i class="fas fa-image"></i>
+            <!-- </ng-container> -->
+            <!-- <ng-template #hideImage>
+
+            </ng-template> -->
+        </div>
+   </div>
+</section>
