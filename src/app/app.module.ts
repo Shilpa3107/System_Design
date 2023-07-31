@@ -22,6 +22,7 @@ import { ToolmenuComponent } from './toolmenu/toolmenu.component';
 import { FrontComponent } from './front/front.component';
 import { TableComponent } from './table/table.component';
 import { TablepopupComponent } from './tablepopup/tablepopup.component';
+import { ImagepopupComponent } from './imagepopup/imagepopup.component';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { TablepopupComponent } from './tablepopup/tablepopup.component';
     ToolmenuComponent,
     FrontComponent,
     TableComponent,
-    TablepopupComponent
+    TablepopupComponent,
+    ImagepopupComponent
     
   ],
   imports: [

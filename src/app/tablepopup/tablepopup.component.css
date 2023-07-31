@@ -1,0 +1,20 @@
+.table-popup-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999; 
+  cursor: pointer;
+}
+.table-popup {
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.popup-icon {
+  font-size: 24px; 
+  color: orchid; 
+  background-color: antiquewhite;
+}

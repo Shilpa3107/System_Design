@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tablepopup.component.css']
 })
 export class TablepopupComponent implements OnInit {
-
+   topics = "table";
+   showTable:boolean = false;
   constructor() { }
 
   ngOnInit(): void {
+    this.topics = "table";
+  }
+
+  toogleTable(): void{
+    this.showTable = !this.showTable;
   }
 
 }
