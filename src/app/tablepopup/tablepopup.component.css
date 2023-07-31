@@ -1,26 +1,20 @@
-/* Style the table popup container */
 .table-popup-container {
   position: fixed;
-  bottom: 20px; /* Adjust the bottom position as per your preference */
-  right: 20px; /* Adjust the right position as per your preference */
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  bottom: 20px;
+  right: 20px; 
+  background-color: rgba(0, 0, 0, 0.5); 
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 9999; /* Ensure the popup is displayed above other content */
+  z-index: 9999; 
   cursor: pointer;
 }
-
-/* Style the table popup */
 .table-popup {
   background-color: white;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  /* Add more styles as per your preference to customize the popup appearance */
 }
-
-/* Style the popup icon */
 .popup-icon {
-  font-size: 24px; /* Adjust the icon size as per your preference */
-  color: orchid; /* Adjust the icon color as per your preference */
+  font-size: 24px; 
+  color: orchid; 
   background-color: antiquewhite;
 }
