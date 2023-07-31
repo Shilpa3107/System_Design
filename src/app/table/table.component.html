@@ -25,7 +25,7 @@
        </table>
 </section>
 --> 
-<section class="table">
+<!-- <section class="table">
   <header>
     <h3>Difference between
       <p class="diff">
@@ -50,4 +50,36 @@
       </tr>
     </td>
   </table>
+</section> -->
+
+
+<section class="table">
+  <header>
+    <h3>Difference between
+      <p class="diff">
+        <ng-container *ngFor="let nameItem of tableData; let i = index">
+          {{ nameItem.name }}
+          <span *ngIf="i < tableData.length - 2">,</span>
+          <span *ngIf="i === tableData.length - 2"> and</span>
+        </ng-container>
+      </p>
+    </h3>
+  </header>
+
+  <table class="table">
+    <tr>
+      <th *ngFor="let nameItem of tableData">
+        {{ nameItem.name }}
+      </th>
+    </tr>
+    <tr>
+      <td *ngFor="let nameItem of tableData">
+        <ng-container *ngFor="let contentItem of nameItem.content">
+        <li> {{ contentItem }}
+          <br>
+        </ng-container>
+      </td>
+    </tr>
+  </table>
 </section>
+
