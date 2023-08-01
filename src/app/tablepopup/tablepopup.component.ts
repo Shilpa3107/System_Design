@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-tablepopup',
@@ -6,12 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tablepopup.component.css']
 })
 export class TablepopupComponent implements OnInit {
-   topics = "table";
+   @Input() tablefile: string="";
    showTable:boolean = false;
   constructor() { }
 
   ngOnInit(): void {
-    this.topics = "table";
   }
 
   toogleTable(): void{
