@@ -23,6 +23,7 @@ import { FrontComponent } from './front/front.component';
 import { TableComponent } from './table/table.component';
 import { TablepopupComponent } from './tablepopup/tablepopup.component';
 import { ImagepopupComponent } from './imagepopup/imagepopup.component';
+import { ImageComponent } from './image/image.component';
 
 
 @NgModule({
@@ -46,7 +47,8 @@ import { ImagepopupComponent } from './imagepopup/imagepopup.component';
     FrontComponent,
     TableComponent,
     TablepopupComponent,
-    ImagepopupComponent
+    ImagepopupComponent,
+    ImageComponent
     
   ],
   imports: [

@@ -1,7 +1,7 @@
 <section class = "tablepopup">
     <div class="table-popup-container">
         <div class="table-popup" *ngIf="showTable">
-            <app-table [data]="topics" [isVisible]="showTable"></app-table>
+            <app-table [data]="tablefile" [isVisible]="showTable"></app-table>
             </div>
         <div class = "popup-icon" (click) = "toogleTable()">
             <i class="fas fa-table"></i>
