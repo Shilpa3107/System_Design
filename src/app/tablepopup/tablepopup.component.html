@@ -1,12 +1,11 @@
 <section class="tablepopup">
-    <!-- Modal -->
     <div id="myModal" class="modal">
       <span class="close" (click)="closeModal()">&times;</span>
       <div class="modal-content">
         <app-table [data]="tablefile"></app-table>
+        
       </div>
     </div>
-
-    <!-- Trigger the modal by clicking on the app-table -->
     <app-table [data]="tablefile" id="myTable" (click)="openModal()"></app-table>
+    <span class="expand-icon"><i class="fas fa-expand"></i></span>
   </section>
