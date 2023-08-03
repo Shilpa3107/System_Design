@@ -1,20 +1,41 @@
-.table-popup-container {
-  position: fixed;
-  bottom: 20px;
-  right: 20px; 
-  background-color: rgba(0, 0, 0, 0.5); 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999; 
+/* Styling for the table popup */
+.tablepopup {
+  position: relative;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* 80% width */
+}
+
+/* Close Button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
   cursor: pointer;
 }
-.table-popup {
-  background-color: white;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-}
-.popup-icon {
-  font-size: 24px; 
-  color: orchid; 
-  background-color: antiquewhite;
-}
+
+/* .close:hover {
+  color: #000;
+} */
