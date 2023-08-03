@@ -6,15 +6,25 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./tablepopup.component.css']
 })
 export class TablepopupComponent implements OnInit {
-   @Input() tablefile: string="";
+   tablefile: string="table";
    showTable:boolean = false;
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  toogleTable(): void{
-    this.showTable = !this.showTable;
+  openModal(): void {
+    const modal = document.getElementById('myModal');
+    if (modal) {
+      modal.style.display = 'block';
+    }
+  }
+
+  closeModal(): void {
+    const modal = document.getElementById('myModal');
+    if (modal) {
+      modal.style.display = 'none';
+    }
   }
 
 }

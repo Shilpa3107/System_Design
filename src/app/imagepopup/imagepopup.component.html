@@ -1,13 +1,12 @@
-<section class = "imagepopup">
-   <div class="image-popup-container">
-    <div class="image-popup" *ngIf="showImage">
-         <img [src]="imageUrl" alt="Popup Image">
+<section class="imagepopup">
+  <div class="image-container">
+  <app-image [imageUrl]="url" [imagedescrip]="describe" (click)="openModal()"></app-image>
+  <span class="expand-icon"><i class="fas fa-expand"></i></span>
+</div>
+    
+    <div #myModal class="modal">
+      <span class="close" (click)="closeModal()">&times;</span>
+      <img [src]="modalImageUrl" alt="{{ modalImageDescrip }}" />
+      <div id="caption">{{ modalImageDescrip }}</div>
     </div>
-    <div class="popup-icon" *ngIf="showImage" (click)="toggleImage()">
-          <i class="fas fa-image"></i>
-    </div>
-    <div class="popup-icon" *ngIf="!showImage" (click)="toggleImage()">
-         <i class="fas fa-image"></i>
-    </div>
-  </div>
 </section>
