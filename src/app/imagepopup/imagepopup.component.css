@@ -1,31 +1,61 @@
-.image-popup-container {
-    position: fixed;
-    bottom: 100px; 
-    right: 12px; 
-    z-index: 9999; 
-    cursor: pointer;
-  }
- .image-popup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60px;
-    height: auto; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    box-sizing: border-box;
-    background-color: rgba(0, 0, 0, 0.5); 
-  }
-  .popup-icon {
-    font-size: 24px; 
-    color: orange; 
-    background-color: antiquewhite;
-    position: absolute;
-    top: 10px; 
-    right: 10px; 
-    z-index: 1; 
-  }
-  
+/* The modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 20px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.9); /* Black background with opacity */
+}
+.image-container {
+  position: relative;
+}
+.expand-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 1;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
+/* Modal content */
+.modal img {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  max-height: 80%;
+  position: relative; 
+}
+
+/* Image caption */
+#caption {
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 3px 5px;
+  border-radius: 50%;
+}
+
+/* Close button on hover */
+.close:hover {
+  color: #ccc;
+}
