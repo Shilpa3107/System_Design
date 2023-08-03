@@ -1,31 +1,30 @@
-/* The modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 20px; /* Location of the box */
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 20px; 
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgba(0, 0, 0, 0.9); /* Black background with opacity */
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0, 0, 0, 0.9); 
 }
 .image-container {
   position: relative;
 }
-.expand-icon {
+.image-container i.fas.fa-expand {
   position: absolute;
-  top: 5px;
-  right: 5px;
-  z-index: 1;
-  color: #fff;
-  cursor: pointer;
-  font-size: 20px;
+  top: 9px; 
+  right: 390px; 
+  color: rgb(217, 195, 211); 
+  padding: 5px;
+  border-radius: 50%; 
+  cursor: pointer; 
 }
 
 
-/* Modal content */
+
 .modal img {
   margin: auto;
   display: block;
@@ -34,14 +33,12 @@
   position: relative; 
 }
 
-/* Image caption */
 #caption {
   color: #fff;
   text-align: center;
   padding: 10px 0;
 }
 
-/* Close button */
 .close {
   position: absolute;
   top: 15px;
@@ -55,7 +52,6 @@
   border-radius: 50%;
 }
 
-/* Close button on hover */
 .close:hover {
   color: #ccc;
 }

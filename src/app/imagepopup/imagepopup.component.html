@@ -3,7 +3,7 @@
   <app-image [imageUrl]="url" [imagedescrip]="describe" (click)="openModal()"></app-image>
   <span class="expand-icon"><i class="fas fa-expand"></i></span>
 </div>
-    <!-- The modal popup -->
+    
     <div #myModal class="modal">
       <span class="close" (click)="closeModal()">&times;</span>
       <img [src]="modalImageUrl" alt="{{ modalImageDescrip }}" />
