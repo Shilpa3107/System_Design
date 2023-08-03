@@ -9,7 +9,8 @@ import { Component, OnInit } from '@angular/core';
 export class AboutComponent implements OnInit {
 
 topics: string = "table";
-aboutimage: string = "https://i.ytimg.com/vi/7UWBYJjuIL0/maxresdefault.jpg";
+aboutimage: string = "https://wallpaperaccess.com/full/1089670.jpg";
+
 constructor() {}
 
   ngOnInit(): void {
