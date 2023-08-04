@@ -6,7 +6,8 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./tablepopup.component.css']
 })
 export class TablepopupComponent implements OnInit {
-   tablefile: string="table";
+  @Input() tablefile: string="";
+  @Input() describe: string="";
    showTable:boolean = false;
   constructor() { }
 

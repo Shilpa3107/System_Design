@@ -55,14 +55,14 @@
 
 <section class="table">
   <header>
-    <h3>Difference between
-      <p class="diff">
+    <h3>{{description}}
+      <!-- <p class="diff">
         <tr *ngFor="let nameItem of tableData; let i = index" class="names">
           {{ nameItem.name }}
           <span *ngIf="i < tableData.length - 2">,</span>
           <span *ngIf="i === tableData.length - 2"> and </span>
       </tr>
-      </p>
+      </p> -->
     </h3>
   </header>
 
@@ -72,12 +72,9 @@
         {{ nameItem.name }}
       </th>
     </tr>
-    <tr>
+    <tr *ngFor="let row of tableData[0]?.content; let i = index"> <!-- Use the first topic's content for row iteration -->
       <td *ngFor="let nameItem of tableData">
-        <ng-container *ngFor="let contentItem of nameItem.content">
-        <li> {{ contentItem }}
-          <br>
-        </ng-container>
+        {{ nameItem.content[i] }}
       </td>
     </tr>
   </table>

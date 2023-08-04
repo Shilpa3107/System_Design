@@ -1,13 +1,21 @@
  .table th{
     text-align: center;
   }
-  table,th,td{
+  table {
+    border-collapse: collapse; /* Add this to remove spacing between table cells */
+    width: 100%; /* Set the table width to fill the container */
+  }
+  th,td{
     border:3px solid;
+    padding: 8px; /* Adjust the padding as needed */
+     margin: 0;
+     vertical-align: top;
   }
   h3{
    margin-left:280px;
    font-family: 'Dosis', sans-serif;
     font-weight: bold;
+    text-align: center;
   }
   .diff{
    display: inline; 

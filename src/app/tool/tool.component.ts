@@ -9,6 +9,8 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./tool.component.css']
 })
 export class ToolComponent implements OnInit {
+  imgurl:string="https://moqups.com/img/mqlps/images/flowchart-maker/hero-image.png"
+  about: string="flowchart-tools"
   topicUrl: string = "";
   subtopicUrl: string = "";
   content: string = "";

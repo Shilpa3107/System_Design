@@ -13,6 +13,7 @@ interface TableData{
 })
 export class TableComponent implements OnInit {
   @Input() data : string = "";
+  @Input() description: string = "";
   @Input() isVisible: boolean =false;
   tableData: TableData[] = [];
 

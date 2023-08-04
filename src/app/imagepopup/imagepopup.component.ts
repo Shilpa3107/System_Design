@@ -1,4 +1,4 @@
-import { Component, OnInit,ElementRef, ViewChild } from '@angular/core';
+import { Component, Input,OnInit,ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-imagepopup',
@@ -6,8 +6,10 @@ import { Component, OnInit,ElementRef, ViewChild } from '@angular/core';
   styleUrls: ['./imagepopup.component.css']
 })
 export class ImagepopupComponent  {
-  url: string = "https://wallpaperaccess.com/full/1089670.jpg";
-  describe: string = "image";
+  @Input() url: string="";
+  @Input() describe: string="";
+  // url: string = "https://wallpaperaccess.com/full/1089670.jpg";
+  // describe: string = "image";
 
   public isExpanded: boolean = false;
   constructor() { }
