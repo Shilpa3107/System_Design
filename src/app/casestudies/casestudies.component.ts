@@ -9,8 +9,8 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./casestudies.component.css']
 })
 export class CasestudiesComponent implements OnInit {
-  tabledata:string="table";
-  heading: string="Difference between ";
+  tabledata:string="architectural";
+  heading: string="Some architectural components";
   topicUrl: string = "";
   subtopicUrl: string = "";
   content: string = "";
