@@ -10,6 +10,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class CasestudiesComponent implements OnInit {
   tabledata:string="table";
+  heading: string="Difference between ";
   topicUrl: string = "";
   subtopicUrl: string = "";
   content: string = "";
