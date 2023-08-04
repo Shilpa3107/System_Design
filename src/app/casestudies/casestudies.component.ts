@@ -9,6 +9,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./casestudies.component.css']
 })
 export class CasestudiesComponent implements OnInit {
+  tabledata:string="table";
   topicUrl: string = "";
   subtopicUrl: string = "";
   content: string = "";
@@ -53,6 +54,8 @@ export class CasestudiesComponent implements OnInit {
         this.content = "Subtopic not found.";
         return;
       }
+
+      
 
       this.content = subtopicObj.content;
     }, (error) => {
