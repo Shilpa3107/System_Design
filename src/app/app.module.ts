@@ -41,6 +41,7 @@ import { SearchComponent } from './search/search.component';
     BlogComponent,
     AboutComponent,
     ContactComponent,
+    SearchComponent,
     UmldiagramComponent,
     TopicComponent,
     NotPageFoundComponent,
@@ -49,8 +50,7 @@ import { SearchComponent } from './search/search.component';
     TableComponent,
     TablepopupComponent,
     ImagepopupComponent,
-    ImageComponent,
-    SearchComponent
+    ImageComponent
     
   ],
   imports: [

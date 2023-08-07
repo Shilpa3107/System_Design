@@ -12,6 +12,7 @@ import { BlogComponent } from './blog/blog.component';
 import { TopicComponent } from './topic/topic.component';
 import { NotPageFoundComponent } from './not-page-found/not-page-found.component';
 import { FrontComponent } from './front/front.component';
+import { SearchComponent } from './search/search.component';
 
 
 const routes: Routes = [
@@ -28,6 +29,7 @@ const routes: Routes = [
   {path: 'blog', component: BlogComponent}, 
   {path: 'about', component: AboutComponent},
   {path: 'contact', component: ContactComponent}, 
+  {path: 'search', component: SearchComponent}, 
   {path: 'umldiagram', component: UmldiagramComponent},
   {path: 'topic/:subtopic', component: TopicComponent},
   {path: '**',component: NotPageFoundComponent}
