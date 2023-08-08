@@ -52,8 +52,8 @@
          ]    
         },
         {
-            "name":"Integrated Development Environments (IDEs)",
-            "url":"Integrated-Development-Environments-(IDEs)",
+            "name":"Integrated Development Environments",
+            "url":"Integrated-Development-Environments",
             "subtopics":[
                 {
                 "name": "Visual Studio Code",
