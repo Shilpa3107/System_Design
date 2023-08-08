@@ -16,7 +16,6 @@
   'assets/jsondata/home.json',
   'assets/jsondata/practices.json',
   'assets/jsondata/tool.json'
-  // Add more file names as needed
 ];
 
 async function loadJSONFile(filename) {
@@ -33,17 +32,13 @@ async function loadJSONFile(filename) {
 }
 
 function performSearch(keyword) {
-  // Clear previous search results
   const searchResultsContainer = document.getElementById('searchResults');
   searchResultsContainer.innerHTML = '';
 
-  // Loop through your JSON files
   for (const filename of jsonFileNames) {
     loadJSONFile(filename).then(data => {
-      // Loop through topics and subtopics in each file
       data.topics.forEach(topic => {
         if (topic.name.includes(keyword)) {
-          // Display the topic name and URL
           const resultItem = document.createElement('div');
           resultItem.innerHTML = `<a href="${topic.url}">${topic.name}</a>`;
           searchResultsContainer.appendChild(resultItem);
@@ -51,7 +46,6 @@ function performSearch(keyword) {
         
         topic.subtopics.forEach(subtopic => {
           if (subtopic.name.includes(keyword)) {
-            // Display the subtopic name and URL
             const resultItem = document.createElement('div');
             resultItem.innerHTML = `<a href="${subtopic.url}">${subtopic.name}</a>`;
             searchResultsContainer.appendChild(resultItem);
