@@ -24,13 +24,6 @@ async function loadJSONFile(filename) {
   return data;
 }
 
-
-async function loadJSONFile(filename) {
-  const response = await fetch(filename);
-  const data = await response.json();
-  return data;
-}
-
 function performSearch(keyword) {
   const searchResultsContainer = document.getElementById('searchResults');
   searchResultsContainer.innerHTML = '';
