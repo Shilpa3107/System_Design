@@ -24,6 +24,7 @@ import { TableComponent } from './table/table.component';
 import { TablepopupComponent } from './tablepopup/tablepopup.component';
 import { ImagepopupComponent } from './imagepopup/imagepopup.component';
 import { ImageComponent } from './image/image.component';
+import { SearchComponent } from './search/search.component';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { ImageComponent } from './image/image.component';
     BlogComponent,
     AboutComponent,
     ContactComponent,
+    SearchComponent,
     UmldiagramComponent,
     TopicComponent,
     NotPageFoundComponent,
