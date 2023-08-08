@@ -25,29 +25,44 @@ async function loadJSONFile(filename) {
 }
 
 function performSearch(keyword) {
+  // Clear previous search results
   const searchResultsContainer = document.getElementById('searchResults');
   searchResultsContainer.innerHTML = '';
 
+  // Loop through your JSON files
   for (const filename of jsonFileNames) {
     loadJSONFile(filename).then(data => {
+      // Loop through topics and subtopics in each file
       data.topics.forEach(topic => {
-        if (topic.name.includes(keyword)) {
-          const resultItem = document.createElement('div');
-          resultItem.innerHTML = `<a href="${topic.url}">${topic.name}</a>`;
-          searchResultsContainer.appendChild(resultItem);
-        }
-        
         topic.subtopics.forEach(subtopic => {
           if (subtopic.name.includes(keyword)) {
+            const parts=filename.split(/[\\/]/);
+            const filewithextension = parts[parts.length-1];
+            const name = filewithextension.split('.')[0];
+            const word = topic.name;
+            const hyphenatedname = word.replace(/ /g, '-');
+            
+            // Display the subtopic name, topic name, and JSON file name
             const resultItem = document.createElement('div');
-            resultItem.innerHTML = `<a href="${subtopic.url}">${subtopic.name}</a>`;
+            resultItem.innerHTML = `
+              <p>JSON File: ${name}</p>
+              <p>Topic: ${topic.name}</p>
+              <p>Subtopic: ${subtopic.name}</p>
+              <p>url: <a href="${name}/${hyphenatedname}_${subtopic.url}">${subtopic.name}</a></p>
+            `;
             searchResultsContainer.appendChild(resultItem);
+           
+            console.log(name);
+            
+            console.log(hyphenatedname);
+            console.log(resultItem);
           }
         });
       });
     });
   }
 }
+
 
 
   </script>
