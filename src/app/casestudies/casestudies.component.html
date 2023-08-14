@@ -25,6 +25,7 @@
            {{ c.value}}
            <br>
            <app-imagepopup  *ngIf="c.imageUrl" [url] = "c.imageUrl"  [describe]= "c.describe"></app-imagepopup>
+           <app-tablepopup *ngIf="c.table" [tablefile] = "c.table"  [describe] = "c.description"></app-tablepopup>
            </div>
         <!-- <app-tablepopup [tablefile]="tabledata" [describe] = "heading"></app-tablepopup> -->
       </div>

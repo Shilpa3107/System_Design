@@ -38,6 +38,12 @@ export class CasestudiesComponent implements OnInit {
         {"imageUrl":"Data format error: Unable to find image url."},
         {
           "describe":"Data format error: Unable to find description"
+        },
+        {
+          "table":"Data format error: Unable to find table"
+        },
+        {
+          "description":"Data format error: Unable to find description"
         });
         return;
       }
@@ -48,7 +54,9 @@ export class CasestudiesComponent implements OnInit {
       if (!topic) {
         this.content.push ({"value": "Topic not found."},
         {"imageUrl":"Image not found"},
-       {"describe":"Description not found"});
+       {"describe":"Description not found"},
+       {"table":"Table not found"},
+       {"description":"Description not found"});
         return;
       }
 
@@ -60,7 +68,13 @@ export class CasestudiesComponent implements OnInit {
       if (!subtopicObj) {
         this.content.push ({"value":"Subtopic not found."},
         {"imageUrl":"Image not found"},
-       {"describe":"Description not found"});
+       {"describe":"Description not found"},
+       {
+        "table":"Table not found"
+       },
+       {
+        "description":"Description not found"
+       });
         return;
       }
 
@@ -71,7 +85,9 @@ export class CasestudiesComponent implements OnInit {
       console.error("Error fetching data:", error);
       this.content.push ({"value":"Error fetching data. Please try again later."},
         {"imageUrl":"Error fetching data. Please try again later."},
-       {"describe":"Error fetching data. Please try again later."});
+       {"describe":"Error fetching data. Please try again later."},
+       {"table":"Error fetching data. Please try again later."},
+       {"description":"Error fetching data. Please try again later."});
     });
   });
   }
