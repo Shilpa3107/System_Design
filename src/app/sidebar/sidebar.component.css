@@ -59,15 +59,6 @@
     margin: 0;
     padding: 0;
   }
-  
-  /*.topic {
-    font-weight: bold;
-    margin-bottom: 10px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-  }*/
-  
   .topic i {
     margin-right: 2px;
   }
@@ -90,6 +81,3 @@
     background-color: rgb(67, 222, 170);
     color:#fff;
   }
-  /* .subtopics li a:visited{
-    color:pink;
-  } */

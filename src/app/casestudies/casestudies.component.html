@@ -20,7 +20,12 @@
         <h2 class="subhead"> {{ sub.replaceAll("-"," ") }}</h2>
         <hr>
         <br>
-        <p>{{ content }}</p>
+        <p>
+            <ul>
+            <li *ngFor="let c of content">
+            {{ c.value}}
+            </li>
+            </ul>
         <app-tablepopup [tablefile]="tabledata" [describe] = "heading"></app-tablepopup>
       </div>
       <ng-template #noContent>

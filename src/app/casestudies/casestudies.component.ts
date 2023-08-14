@@ -13,7 +13,7 @@ export class CasestudiesComponent implements OnInit {
   heading: string="Some architectural components";
   topicUrl: string = "";
   subtopicUrl: string = "";
-  content: string = "";
+  content: any[] = [];
   sub: string=" ";
   topics : string="casestudies"
   constructor(private route: ActivatedRoute, private http: HttpClient) {
@@ -34,7 +34,7 @@ export class CasestudiesComponent implements OnInit {
       console.log("Data received:", data);
 
       if (!data || !data.topics || !Array.isArray(data.topics)) {
-        this.content = "Data format error: Unable to find topics.";
+        this.content.push ({"value":"Data format error: Unable to find topics."});
         return;
       }
 
@@ -42,7 +42,7 @@ export class CasestudiesComponent implements OnInit {
       console.log("Found topic:", topic);
 
       if (!topic) {
-        this.content = "Topic not found.";
+        this.content.push ({"value": "Topic not found."});
         return;
       }
 
@@ -52,7 +52,7 @@ export class CasestudiesComponent implements OnInit {
       console.log("Found subtopicObj:", subtopicObj);
 
       if (!subtopicObj) {
-        this.content = "Subtopic not found.";
+        this.content.push ({"value":"Subtopic not found."});
         return;
       }
 
@@ -61,7 +61,7 @@ export class CasestudiesComponent implements OnInit {
       this.content = subtopicObj.content;
     }, (error) => {
       console.error("Error fetching data:", error);
-      this.content = "Error fetching data. Please try again later.";
+      this.content.push ({"value":"Error fetching data. Please try again later."});
     });
   });
   }
