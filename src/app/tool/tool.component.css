@@ -9,39 +9,26 @@
   #sidebarMenu{
     height:87%;
     position:fixed;
-    left:0;    /* position of sidebar topics    */
-    top:20px;       /* position of sidebar topics    */
+    left:0;   
+    top:20px;      
     width:200px;
     margin-top:80px;
-    /*color of sidebar topics   */
   }
   .sideview{
    margin-left: 250px;
   }
   .menu{
-    list-style: none;  /*for removing dotted part from the list*/
-    padding:0;    /* for removing space from the left*/
-    margin:0;  /* for removing space from the top*/
+    list-style: none;  
+    padding:0;   
+    margin:0;  
   }
-  /*.menu li{
-    color:rgb(70,192,14);
-    border-bottom:1 px solid #456;  /*for the border color or the line after each topic*/
-  /*}
-  .menu li a{
-    color:rgb(7,7,48);   /* the color of each link  */
-  /*  display:block;
-    text-decoration: none;  /* for the underline from each topic so that it does not look like a link  */
-  /*  text-transform: uppercase;  /* for changing each char of the topic to uppercase*/
-  /*  padding: 20px;  /* to create space between each and every topic  */
-  /* } */
-  .sidebarIcon{    /*  for making toggle button design*/
+  .sidebarIcon{    
     width:22px;
     height:22px;
     position:absolute;
     z-index:20;
     top:50px;
     left:5px;
-    /* background-color: aliceblue; */ /* color of the toggle button   */
     cursor:pointer;
     margin-bottom:5px;
   }
@@ -50,7 +37,7 @@
   }
   #Open:checked ~ #sidebarMenu{
        
-    transform: translate(0px); /*for making sidebar appear by a click*/
+    transform: translate(0px); 
   
   }
   
@@ -62,7 +49,7 @@
       margin-left:0px;
    }
     #sidebarMenu{
-      transform: translateX(-300px); /*  for disappearing the sidebar whose width 250px */
+      transform: translateX(-300px); 
       transition: transform 300ms ease-in-out;
     }
     .wrapper{
@@ -71,7 +58,7 @@
       transition: all 0.5s;
     }
   .wrapper.second, .wrapper.third{
-    margin-top:3px;                  /* for creating 2 lines in the button  */
+    margin-top:3px;                 
   }
   #Open:checked ~ .sidebarIcon > .wrapper.second{
     opacity:0;

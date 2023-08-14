@@ -1,20 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Josefin+Sans:wght@200;300&family=Lobster&family=Pacifico&family=Roboto:ital,wght@1,100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@500&family=Dosis&family=Josefin+Sans:wght@200;300&family=Lobster&family=Pacifico&family=Roboto:ital,wght@1,100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-h1{
-   text-align: center;
-   font-family: 'Poppins', sans-serif;
-   margin-top: 4px;
-   font-weight: bold;
-}
-div{
-   font-family: 'Dosis', sans-serif;
-}
-section{
-   background-image: url("https://img.freepik.com/free-vector/white-background-with-blue-tech-hexagon_1017-19366.jpg?w=996&t=st=1687872269~exp=1687872869~hmac=2d9aedbbeea8ea6df0118f9a2ae7d464c1a8c80ec6ec426c198f1e0929ac352d");
-   font-weight: bold;
-   margin-left:20px;
- } */
  .main-content{
 
   margin-left:250px;
@@ -25,39 +8,27 @@ section{
  #sidebarMenu{
    height:63%;
    position:fixed;
-   left:0;    /* position of sidebar topics    */
-   top:20px;       /* position of sidebar topics    */
+   left:0;    
+   top:20px;      
    width:200px;
    margin-top:80px;
-   /*color of sidebar topics   */
+   
  }
  .sideview{
   margin-left: 250px;
  }
  .menu{
-   list-style: none;  /*for removing dotted part from the list*/
-   padding:0;    /* for removing space from the left*/
-   margin:0;  /* for removing space from the top*/
+   list-style: none;  
+   padding:0;    
+   margin:0;  
  }
- /*.menu li{
-   color:rgb(70,192,14);
-   border-bottom:1 px solid #456;  /*for the border color or the line after each topic*/
- /*}
- .menu li a{
-   color:rgb(7,7,48);   /* the color of each link  */
- /*  display:block;
-   text-decoration: none;  /* for the underline from each topic so that it does not look like a link  */
- /*  text-transform: uppercase;  /* for changing each char of the topic to uppercase*/
- /*  padding: 20px;  /* to create space between each and every topic  */
- /* } */
- .sidebarIcon{    /*  for making toggle button design*/
+ .sidebarIcon{   
    width:22px;
    height:22px;
    position:absolute;
    z-index:20;
    top:50px;
    left:5px;
-   /* background-color: aliceblue; */ /* color of the toggle button   */
    cursor:pointer;
    margin-bottom:5px;
  }
@@ -66,7 +37,7 @@ section{
  }
  #Open:checked ~ #sidebarMenu{
       
-   transform: translate(0px); /*for making sidebar appear by a click*/
+   transform: translate(0px); 
  
  }
  
@@ -78,7 +49,7 @@ section{
      margin-left:0px;
   }
    #sidebarMenu{
-     transform: translateX(-300px); /*  for disappearing the sidebar whose width 250px */
+     transform: translateX(-300px); 
      transition: transform 300ms ease-in-out;
    }
    .wrapper{
@@ -87,7 +58,7 @@ section{
      transition: all 0.5s;
    }
  .wrapper.second, .wrapper.third{
-   margin-top:3px;                  /* for creating 2 lines in the button  */
+   margin-top:3px;                  
  }
  #Open:checked ~ .sidebarIcon > .wrapper.second{
    opacity:0;
