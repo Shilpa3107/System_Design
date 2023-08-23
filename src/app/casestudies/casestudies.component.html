@@ -1,4 +1,4 @@
-<section class = "casestuied-section">
+<section class = "casestuies-section">
     <input type ="checkbox" name=""id="Open">
   <label for="Open" class="sidebarIcon" >
    <div class="wrapper first"></div>
@@ -16,20 +16,21 @@
     
         <!-- <p>{{topics}}</p> -->
       </div>
-      <div class = "sideview" *ngIf="content; else noContent">
+      <div class="sideview">
         <h2 class="subhead"> {{ sub.replaceAll("-"," ") }}</h2>
         <hr>
         <br>
         <p>
-            <ul>
-            <li *ngFor="let c of content">
-            {{ c.value}}
-            </li>
-            </ul>
-        <app-tablepopup [tablefile]="tabledata" [describe] = "heading"></app-tablepopup>
+            <div *ngFor="let c of content">
+           {{ c.value}}
+           <br>
+           <app-imagepopup  *ngIf="c.imageUrl" [url] = "c.imageUrl"  [describe]= "c.describe"></app-imagepopup>
+           <app-tablepopup *ngIf="c.table" [tablefile] = "c.table"  [describe] = "c.description"></app-tablepopup>
+           </div>
+        <!-- <app-tablepopup [tablefile]="tabledata" [describe] = "heading"></app-tablepopup> -->
       </div>
-      <ng-template #noContent>
-      <section class = "main-content">
+      
+      <section class="main-content" *ngIf="!content.length">
     <h1>Case Studies</h1>
     <hr>
     <br>
@@ -108,5 +109,5 @@ Maintenance of a system design is an essential aspect of ensuring its continued 
 Maintenance activities are typically carried out by a dedicated team or individuals responsible for system operations and support. The frequency and intensity of maintenance tasks will vary depending on the complexity of the system, the user base, and the criticality of the system's function to the organization.
 </div>
 </section>
-</ng-template>
+<!-- </ng-template> -->
 </section>
