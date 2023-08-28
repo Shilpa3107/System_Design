@@ -17,8 +17,8 @@ section{
    margin-left:20px;
  }
 
- /*Common css style
- @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Josefin+Sans:wght@200;300&family=Lobster&family=Pacifico&family=Roboto:ital,wght@1,100&display=swap');
+ /*Common css style*/
+ /* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Josefin+Sans:wght@200;300&family=Lobster&family=Pacifico&family=Roboto:ital,wght@1,100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@500&family=Dosis&family=Josefin+Sans:wght@200;300&family=Lobster&family=Pacifico&family=Roboto:ital,wght@1,100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 h1{
@@ -26,15 +26,17 @@ h1{
    font-family: 'Poppins', sans-serif;
    margin-top: 4px;
    font-weight: bold;
+   color:white;
 }
 div{
    font-family: 'Dosis', sans-serif;
+   
 }
 section{
-   background-image: url("https://img.freepik.com/free-vector/white-background-with-blue-tech-hexagon_1017-19366.jpg?w=996&t=st=1687872269~exp=1687872869~hmac=2d9aedbbeea8ea6df0118f9a2ae7d464c1a8c80ec6ec426c198f1e0929ac352d");
+   background-image: url("https://images.wallpapersden.com/image/download/the-final-night-hd-illustrator_bWpnZWmUmZqaraWkpJRobWllrWdma2U.jpg");
    font-weight: bold;
-   margin-left:20px;
- }
+   margin-left:0px;
+ } */
 
 
- */
+ 
