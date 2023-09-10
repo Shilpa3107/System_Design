@@ -35,16 +35,22 @@ export class CasestudiesComponent implements OnInit {
 
       if (!data || !data.topics || !Array.isArray(data.topics)) {
         this.content.push ({"value":"Data format error: Unable to find topics."},
-        {"imageUrl":"Data format error: Unable to find image url."},
         {
-          "describe":"Data format error: Unable to find description"
-        },
-        {
-          "table":"Data format error: Unable to find table"
-        },
-        {
-          "description":"Data format error: Unable to find description"
-        });
+          "heading":"Data format error: Unable to find heading"
+       },
+       {
+         "list":"Data format error: Unable to find list"
+       },
+       {"imageUrl":"Data format error: Unable to find image url."},
+       {
+         "describe":"Data format error: Unable to find description"
+       },
+       {
+         "table":"Data format error: Unable to find table"
+       },
+       {
+         "description":"Data format error: Unable to find description"
+       });
         return;
       }
 
@@ -53,6 +59,15 @@ export class CasestudiesComponent implements OnInit {
 
       if (!topic) {
         this.content.push ({"value": "Topic not found."},
+        {
+          "audio":"audio not found"
+        },
+        {
+          "heading":"heading not found"
+       },
+       {
+         "list":"list not found"
+       },
         {"imageUrl":"Image not found"},
        {"describe":"Description not found"},
        {"table":"Table not found"},
@@ -67,6 +82,15 @@ export class CasestudiesComponent implements OnInit {
 
       if (!subtopicObj) {
         this.content.push ({"value":"Subtopic not found."},
+        {
+          "audio":"audio not found"
+        },
+        {
+          "heading":"heading not found"
+       },
+       {
+         "list":"list not found"
+       },
         {"imageUrl":"Image not found"},
        {"describe":"Description not found"},
        {
@@ -84,6 +108,15 @@ export class CasestudiesComponent implements OnInit {
     }, (error) => {
       console.error("Error fetching data:", error);
       this.content.push ({"value":"Error fetching data. Please try again later."},
+      {
+        "audio":"Error fetching data. Please try again later."
+      },
+      {
+        "heading":"Error fetching data. Please try again later."
+     },
+     {
+       "list":"Error fetching data. Please try again later."
+     },
         {"imageUrl":"Error fetching data. Please try again later."},
        {"describe":"Error fetching data. Please try again later."},
        {"table":"Error fetching data. Please try again later."},
@@ -92,4 +125,9 @@ export class CasestudiesComponent implements OnInit {
   });
   }
 
+  getAudioPath(audioIdentifier: string): string {
+    //console.log("Audio function")
+    // Construct the path to the audio file based on the identifier
+    return `assets/audio/${audioIdentifier}`;
+}
 }

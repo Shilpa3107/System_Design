@@ -1,26 +1,47 @@
 <section class="home">
-  
   <input type ="checkbox" name=""id="Open">
   <label for="Open" class="sidebarIcon" >
    <div class="wrapper first"></div>
    <div class="wrapper second"></div>
    <div class="wrapper third"></div>
   </label>
-  <div class="menu" id = "sidebarMenu">
-    <app-sidebar [data]="topics"></app-sidebar>  <!--for showing topics-->
-    <!-- <p>{{topics}}</p> -->
-  </div>
-  <div class = "sideview" *ngIf="content; else noContent">
-    <h2 class="subhead"> {{ sub.replaceAll("-"," ") }}</h2>
-    <hr>
-    <br>
-    <p>{{ content }}</p>
-  </div>
-    <!-- <app-sidebar ></app-sidebar>
-      <app-sidebar></app-sidebar>
-    </div> -->
-    <ng-template #noContent>
-        <div class="main-content">
+    <div class="menu" id = "sidebarMenu">
+        <app-sidebar [data]="topics"></app-sidebar>  <!--for showing topics-->
+    <!-- </div>
+    <div class="main-content">
+        <h1>{{topic2.replaceAll("-"," ")}}</h1>
+            <hr>
+            <br>
+        <p>{{content}}</p> -->
+    
+        <!-- <p>{{topics}}</p> -->
+      </div>
+      <div class="sideview">
+        <h2 class="subhead"> {{ sub.replaceAll("-"," ") }}</h2>
+        
+        
+        <p>
+            <div *ngFor="let c of content">
+              <audio controls *ngIf="c.audio">
+                <source [src]="getAudioPath(c.audio)">
+            </audio>
+           {{ c.value}}
+           
+           <app-imagepopup  *ngIf="c.imageUrl" [url] = "c.imageUrl"  [describe]= "c.describe"></app-imagepopup>
+           <app-tablepopup *ngIf="c.table" [tablefile] = "c.table"  [describe] = "c.description"></app-tablepopup>
+          <h3>{{c.heading}}</h3>
+          <div >
+            <ul>
+                <li *ngFor="let k of c.list">
+                    {{k}}
+                </li>
+            </ul>
+          </div>
+        </div>
+        <!-- <app-tablepopup [tablefile]="tabledata" [describe] = "heading"></app-tablepopup> -->
+      </div>
+      
+      <section class="main-content" *ngIf="!content.length">
       <div class="ads">
         <!-- Your ad code goes here -->
         <img src="path/to/your/ad-image.jpg" alt="Advertisement">
@@ -49,7 +70,7 @@
         <!-- Your ad code goes here -->
         <img src="path/to/your/ad-image.jpg" alt="Advertisement">
       </div>
-    </div>
-  </ng-template>
+    
+  </section>
   </section>
   
