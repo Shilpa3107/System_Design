@@ -7,20 +7,17 @@
   </label>
     <div class="menu" id = "sidebarMenu">
         <app-sidebar [data]="topics"></app-sidebar>  <!--for showing topics-->
-    <!-- </div>
-    <div class="main-content">
-        <h1>{{topic2.replaceAll("-"," ")}}</h1>
-            <hr>
-            <br>
-        <p>{{content}}</p> -->
-    
-        <!-- <p>{{topics}}</p> -->
+         
       </div>
       <div class="sideview">
         <h2 class="subhead"> {{ sub.replaceAll("-"," ") }}</h2>
        
         <p>
+           
             <div *ngFor="let c of content">
+                <audio controls *ngIf="c.audio">
+                    <source [src]="getAudioPath(c.audio)">
+                </audio>
            {{ c.value}}
            
            <app-imagepopup  *ngIf="c.imageUrl" [url] = "c.imageUrl"  [describe]= "c.describe"></app-imagepopup>

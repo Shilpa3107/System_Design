@@ -54,6 +54,9 @@ export class HomeComponent implements OnInit {
         if (!topic) {
           this.content.push ({"value": "Topic not found."},
           {
+            "audio":"audio not found"
+          },
+          {
             "heading":"heading not found"
          },
          {
@@ -73,6 +76,9 @@ export class HomeComponent implements OnInit {
   
         if (!subtopicObj) {
           this.content.push ({"value":"Subtopic not found."},
+          {
+            "audio":"audio not found"
+          },
           {
             "heading":"heading not found"
          },
@@ -97,6 +103,9 @@ export class HomeComponent implements OnInit {
         console.error("Error fetching data:", error);
         this.content.push ({"value":"Error fetching data. Please try again later."},
         {
+          "audio":"Error fetching data. Please try again later."
+        },
+        {
           "heading":"Error fetching data. Please try again later."
        },
        {
@@ -110,4 +119,9 @@ export class HomeComponent implements OnInit {
     });
     }
   
+    getAudioPath(audioIdentifier: string): string {
+      //console.log("Audio function")
+      // Construct the path to the audio file based on the identifier
+      return `assets/audio/${audioIdentifier}`;
+  }
   }
