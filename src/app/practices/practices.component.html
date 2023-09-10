@@ -1,22 +1,44 @@
 <section class = "practices-section">
-    <input type ="checkbox" name=""id="Open">
-    <label for="Open" class="sidebarIcon" >
-     <div class="wrapper first"></div>
-     <div class="wrapper second"></div>
-     <div class="wrapper third"></div>
-    </label>
-      <div class="menu" id = "sidebarMenu">
-          <app-sidebar [data]="topics"></app-sidebar>  <!--for showing topics-->
-          <!-- <p>{{topics}}</p> -->
+  <input type ="checkbox" name=""id="Open">
+  <label for="Open" class="sidebarIcon" >
+   <div class="wrapper first"></div>
+   <div class="wrapper second"></div>
+   <div class="wrapper third"></div>
+  </label>
+    <div class="menu" id = "sidebarMenu">
+        <app-sidebar [data]="topics"></app-sidebar>  <!--for showing topics-->
+    <!-- </div>
+    <div class="main-content">
+        <h1>{{topic2.replaceAll("-"," ")}}</h1>
+            <hr>
+            <br>
+        <p>{{content}}</p> -->
+    
+        <!-- <p>{{topics}}</p> -->
+      </div>
+      <div class="sideview">
+        <h2 class="subhead"> {{ sub.replaceAll("-"," ") }}</h2>
+        <hr>
+        
+        <p>
+            <div *ngFor="let c of content">
+           {{ c.value}}
+           
+           <app-imagepopup  *ngIf="c.imageUrl" [url] = "c.imageUrl"  [describe]= "c.describe"></app-imagepopup>
+           <app-tablepopup *ngIf="c.table" [tablefile] = "c.table"  [describe] = "c.description"></app-tablepopup>
+          <h3>{{c.heading}}</h3>
+          <div *ngFor="let k of c.list">
+            <ul>
+                <li>
+                    {{k}}
+                </li>
+            </ul>
+          </div>
         </div>
-        <div class = "sideview" *ngIf="content; else noContent">
-          <h2 class="subhead"> {{ sub.replaceAll("-"," ") }}</h2>
-          <hr>
-          <br>
-          <p>{{ content }}</p>
-        </div>
-        <ng-template #noContent>
-        <section class = "main-content">
+        <!-- <app-tablepopup [tablefile]="tabledata" [describe] = "heading"></app-tablepopup> -->
+      </div>
+      
+      <section class="main-content" *ngIf="!content.length">
     <h1>Best-Practices</h1>
     <hr>
     <br>
@@ -38,5 +60,5 @@
 
 </div>
 </section>
-</ng-template>
 </section>
+
