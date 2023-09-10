@@ -18,7 +18,7 @@
       </div>
       <div class="sideview">
         <h2 class="subhead"> {{ sub.replaceAll("-"," ") }}</h2>
-        <hr>
+        
         
         <p>
             <div *ngFor="let c of content">
@@ -27,9 +27,9 @@
            <app-imagepopup  *ngIf="c.imageUrl" [url] = "c.imageUrl"  [describe]= "c.describe"></app-imagepopup>
            <app-tablepopup *ngIf="c.table" [tablefile] = "c.table"  [describe] = "c.description"></app-tablepopup>
           <h3>{{c.heading}}</h3>
-          <div *ngFor="let k of c.list">
+          <div >
             <ul>
-                <li>
+                <li *ngFor="let k of c.list">
                     {{k}}
                 </li>
             </ul>
