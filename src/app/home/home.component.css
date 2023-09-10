@@ -71,7 +71,7 @@
 
 .main-content {
   flex: 1;
-  padding: 0 20px;
+  padding: 0 ;
   text-align: left;
 }
 *{
@@ -87,7 +87,7 @@
   /*color of sidebar topics   */
 }
 .sideview{
-  margin-left: 250px;
+  margin-left: 190px;
  }
 .menu{
   list-style: none;  /*for removing dotted part from the list*/
